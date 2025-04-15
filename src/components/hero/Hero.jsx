@@ -32,7 +32,7 @@ function Hero() {
           <img
             src="https://www.dora.uz/images/Laptop.webp"
             alt="Laptop rasmi"
-            className="w-full max-w-[800px] mx-auto"
+            className="w-full max-w-[800px] mx-auto transition-transform duration-300 ease-in-out transform hover:scale-105"
           />
         </div>
       </div>

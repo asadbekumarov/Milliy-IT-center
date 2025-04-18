@@ -7,7 +7,7 @@ import { FaArrowsRotate } from "react-icons/fa6";
 function Communication() {
   return (
     <div className="bg-gradient-to-b from-[#539c9f] to-[#ffffff] w-full">
-      <div className="max-w-[1460px] mx-auto px-4 py-4 mb-20">
+      <div className="max-w-[1460px] mx-auto px-4 py-4">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-10 pt-20">
           <div className="flex-1">
             <h3 className="bg-[#e5f3f4] inline-block p-2 text-[#539c9f] rounded-md font-bold font-swiss text-sm">
@@ -125,8 +125,8 @@ function Communication() {
           </div>
         </div>
         <div>
-          <h3 className="font-medium text-5xl">Bizning joylashuvlarimiz</h3>
-          <p className="text-lg text-[#84848d] py-3">
+          <h3 className="font-medium text-5xl mt-10">Bizning joylashuvlarimiz</h3>
+          <p className="text-lg text-[#84848d] py-3 mt-5">
             Bizning merosimiz va o'sishimiz yo'lini kuzatish
           </p>
           <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">

@@ -69,7 +69,7 @@ function Contact() {
                   <input
                     className="border outline-none p-2 rounded-md w-full focus:ring-2 focus:ring-[#539c9f]"
                     placeholder="+998"
-                    type="text"
+                    type="number"
                   />
                 </span>
               </div>

@@ -164,7 +164,7 @@ function Header() {
               </li>
               <li>
                 <Link
-                  to="/aloqa"
+                  to="/communication"
                   className="block font-swiss py-2 px-4 bg-[#f1f1f1] rounded hover:bg-[#539c9f] hover:text-white transition"
                   onClick={() => setMenuOpen(false)}
                 >

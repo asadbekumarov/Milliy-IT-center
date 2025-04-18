@@ -13,7 +13,9 @@ function Communication() {
             <h3 className="bg-[#e5f3f4] inline-block p-2 text-[#539c9f] rounded-md font-bold font-swiss text-sm">
               Biz bilan bog'lanish
             </h3>
-            <h2 className="font-semibold text-4xl sm:text-5xl md:text-6xl pt-5">Aloqa</h2>
+            <h2 className="font-semibold text-4xl sm:text-5xl md:text-6xl pt-5">
+              Aloqa
+            </h2>
             <p className="text-base sm:text-lg max-w-[600px] py-4">
               Sizda savollar bormi yoki bizning xizmatlarimiz haqida qo'shimcha
               ma'lumot kerakmi? Biz bilan bog'lanish uchun quyidagi kontakt
@@ -108,7 +110,9 @@ function Communication() {
                   />
                 </div>
                 <div className="flex gap-2 items-end">
-                  <button className="bg-[#e5f3f4] px-4 py-3 rounded-md">asdfgh</button>
+                  <button className="bg-[#e5f3f4] px-4 py-3 rounded-md">
+                    asdfgh
+                  </button>
                   <button className="w-[48px] h-[48px] flex items-center justify-center rounded-lg bg-[#539c9f] hover:bg-[#3c7f82] transition">
                     <FaArrowsRotate className="text-white" />
                   </button>
@@ -117,6 +121,66 @@ function Communication() {
               <button className="bg-[#539c9f] border text-white w-full py-3 mt-2 rounded-md font-semibold text-lg hover:bg-[#3c7f82] transition">
                 Yuborish
               </button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 className="font-medium text-5xl">Bizning joylashuvlarimiz</h3>
+          <p className="text-lg text-[#84848d] py-3">
+            Bizning merosimiz va o'sishimiz yo'lini kuzatish
+          </p>
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
+            <div className="p-4 rounded-xl w-full shadow-lg text-black bg-gradient-to-r from-[#539c9f] via-[#ffffff] to-[#539c9f]">
+              <h4 className="font-semibold text-2xl font-swiss">
+                DORA® System
+              </h4>
+              <span>
+                <p className="text-lg text-[#6c6d77]">Address:</p>
+                <p className="font-medium text-lg">Chilanzar street 2/2</p>
+              </span>
+              <span>
+                <p className="text-lg text-[#6c6d77]">Phone Number:</p>
+                <p className="font-medium text-lg">+998935135324</p>
+              </span>
+            </div>
+            <div className="p-4 rounded-xl w-full shadow-lg text-black bg-gradient-to-r from-[#539c9f] via-[#ffffff] to-[#539c9f]">
+              <h4 className="font-semibold text-2xl font-swiss">
+                DORA® System
+              </h4>
+              <span>
+                <p className="text-lg text-[#6c6d77]">Address:</p>
+                <p className="font-medium text-lg">Chilanzar street 2/2</p>
+              </span>
+              <span>
+                <p className="text-lg text-[#6c6d77]">Phone Number:</p>
+                <p className="font-medium text-lg">+998935135324</p>
+              </span>
+            </div>
+            <div className="p-4 rounded-xl w-full shadow-lg text-black bg-gradient-to-r from-[#539c9f] via-[#ffffff] to-[#539c9f]">
+              <h4 className="font-semibold text-2xl font-swiss">
+                DORA® System
+              </h4>
+              <span>
+                <p className="text-lg text-[#6c6d77]">Address:</p>
+                <p className="font-medium text-lg">Chilanzar street 2/2</p>
+              </span>
+              <span>
+                <p className="text-lg text-[#6c6d77]">Phone Number:</p>
+                <p className="font-medium text-lg">+998935135324</p>
+              </span>
+            </div>
+            <div className="p-4 rounded-xl w-full shadow-lg text-black bg-gradient-to-r from-[#539c9f] via-[#ffffff] to-[#539c9f]">
+              <h4 className="font-semibold text-2xl font-swiss">
+                DORA® System
+              </h4>
+              <span>
+                <p className="text-lg text-[#6c6d77]">Address:</p>
+                <p className="font-medium text-lg">Chilanzar street 2/2</p>
+              </span>
+              <span>
+                <p className="text-lg text-[#6c6d77]">Phone Number:</p>
+                <p className="font-medium text-lg">+998935135324</p>
+              </span>
             </div>
           </div>
         </div>

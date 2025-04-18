@@ -113,7 +113,6 @@ function Header() {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {menuOpen && (
           <div className="lg:hidden mt-4 space-y-4">
             <ul className="flex flex-col gap-2">

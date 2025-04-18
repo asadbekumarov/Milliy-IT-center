@@ -67,7 +67,7 @@ function Header() {
             </li>
             <li>
               <Link
-                to="/aloqa"
+                to="/communication"
                 className="hover:underline font-swiss hover:text-[#3b7f82] transition duration-200"
               >
                 Aloqa

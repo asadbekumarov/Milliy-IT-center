@@ -55,8 +55,7 @@ function Contact() {
               Bepul konsultatsiya oling
             </h3>
             <div className="space-y-4">
-              {/* Ism va Telefon */}
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <span className="flex flex-col flex-1">
                   <p className="text-sm">Ism</p>
                   <input

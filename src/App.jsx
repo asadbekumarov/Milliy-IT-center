@@ -1,30 +1,22 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Layout from "./pages/layout/Layout";
 import Notfound from "./components/notFound/Notfound";
-import Hero from "./components/hero/Hero";
-import Services from "./components/services/Services";
-import AboutUs from "./components/aboutUs/AboutUs";
-import Portfolio from "./components/portfolio/Portfolio";
+import Home from "./pages/home/Home";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
+import ServicesPage from "./pages/servicesPage/ServicesPage";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route
-          index
-          element={
-            <>
-              <Hero />
-              <Services />
-              <AboutUs />
-              <Portfolio />
-            </>
-          }
-        />
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="service" element={<ServicesPage />} />
         <Route path="*" element={<Notfound />} />
-      </Route>
-    </Routes>
+      </Routes>
+      <Footer />
+    </>
   );
 }
 

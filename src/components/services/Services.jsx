@@ -1,20 +1,58 @@
 import axios from "axios";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaLock } from "react-icons/fa";
 
 function Services() {
-  axios
-    .get("https://214e-185-139-138-149.ngrok-free.app/clients")
-    .then((response) => {
-      console.log(response.data);
-    })
-    .catch((error) => {
-      console.error("Error fetching data:", error);
-    });
+  const [response, setResponse] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  useEffect(() => {
+    axios
+      .get("https://b8ee-90-156-163-233.ngrok-free.app/api/clients", {
+        headers: {
+          "ngrok-skip-browser-warning": "true",
+        },
+      })
+      .then((response) => {
+        console.log("Response:", response?.data);
+        setResponse(response);
+        setLoading(false);
+      })
+      .catch((error) => {
+        setError(error);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error.message}</div>;
   return (
     <div className="bg-[#f9f7f0]">
       <div className="max-w-[1460px] mx-auto px-4 py-4">
-        <div>lorem</div>
+        <div>
+          {response?.data && response.data.length > 0 ? (
+            response.data.map((client) => (
+              <div key={client.id} className="mb-6">
+                <div className="bg-white p-4 rounded-lg shadow-md">
+                  <div>
+                    <img
+                      src={client.logo}
+                      alt="Client"
+                      style={{ maxWidth: "100%", height: "auto" }}
+                      className="rounded-md"
+                    />
+                  </div>
+                  <div className="mt-4">
+                    <h2 className="text-xl font-semibold">{client.name}</h2>
+                    <p className="text-gray-500">{client.description}</p>
+                  </div>
+                </div>
+              </div>
+            ))
+          ) : (
+            <div>No clients found.</div>
+          )}
+        </div>
         <div className="flex justify-center flex-col items-center">
           <p className="bg-[#e5f3f4] font-swiss mt-10 text-[#539c9f] text-center p-2 rounded-md font-bold text-base">
             Xizmatlar

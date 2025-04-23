@@ -138,6 +138,8 @@ function Communication() {
                 <p className="text-lg text-[#6c6d77]">Address:</p>
                 <p className="font-medium text-lg">Chilanzar street 2/2</p>
               </span>
+              <div>
+              </div>
               <span>
                 <p className="text-lg text-[#6c6d77]">Phone Number:</p>
                 <p className="font-medium text-lg">+998935135324</p>

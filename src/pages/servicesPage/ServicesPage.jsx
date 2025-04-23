@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Icon from "../../assets/icon.png";
 import Contact from "../../components/contact/Contact";
+import { Link } from "react-router-dom";
 function ServicesPage() {
   const [active, setActive] = useState("Barchasi ko‘rish");
 
@@ -74,6 +75,17 @@ function ServicesPage() {
           >
             Biznes jarayonlarini avtomatlashtirish
           </button>
+          <Link to="/price">
+            <button
+              onClick={() => setActive("Price")}
+              className={`font-normal text-base sm:text-xl py-2 px-3 rounded-full font-swiss 
+      transition-all duration-300 ease-in-out 
+      hover:bg-blue-600 hover:text-white 
+      ${active === "Price" ? "bg-blue-600 text-white" : "bg-[#f8f9fa]"}`}
+            >
+              Price
+            </button>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">

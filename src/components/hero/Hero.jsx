@@ -1,10 +1,17 @@
-import React from "react";
-
+import Aos from "aos";
+import React, { useEffect } from "react";
+import "aos/dist/aos.css";
 function Hero() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <div className="max-w-[1460px] mx-auto px-4 py-10">
       <div className="flex mt-20 flex-col-reverse md:flex-row justify-between items-center gap-10">
-        <div className="text-center md:text-left">
+        <div data-aos="zoom-in-right" className="text-center md:text-left">
           <h1 className="font-semibold text-4xl md:text-6xl font-swiss max-w-full md:max-w-[630px] text-[#000]">
             Biznesingiz uchun kompleks yechimlar
           </h1>
@@ -28,7 +35,7 @@ function Hero() {
             </button>
           </div>
         </div>
-        <div>
+        <div data-aos="zoom-in-left">
           <img
             src="https://www.dora.uz/images/Laptop.webp"
             alt="Laptop rasmi"

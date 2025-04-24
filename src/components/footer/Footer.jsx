@@ -11,7 +11,11 @@ import { RiInstagramFill } from "react-icons/ri";
 function Footer() {
   return (
     <div className="max-w-[1460px] mx-auto px-4 py-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mt-16 mb-28">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mt-16 mb-28"
+      >
         <div>
           <img className="max-w-52 mb-4" src={Logo} alt="logo img" />
           <p className="text-sm my-1">DORA® Будьте уникальными вместе с нами</p>

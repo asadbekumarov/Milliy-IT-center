@@ -1,10 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../../assets/headerImg/logo.png";
 import { Link } from "react-router-dom";
 import { MdPhoneInTalk } from "react-icons/md";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
+import Aos from "aos";
 
 function Header() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -114,7 +121,12 @@ function Header() {
         </div>
 
         {menuOpen && (
-          <div className="lg:hidden mt-4 space-y-4">
+          <div
+            key={menuOpen ? "menu-open" : "menu-closed"}
+            data-aos="fade-down"
+            data-aos-duration="500"
+            className="lg:hidden mt-4 space-y-4"
+          >
             <ul className="flex flex-col gap-2">
               <li>
                 <Link

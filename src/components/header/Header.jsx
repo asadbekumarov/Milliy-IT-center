@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Logo from "../../assets/headerImg/logo.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { MdPhoneInTalk } from "react-icons/md";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 import Aos from "aos";
@@ -13,14 +13,20 @@ function Header() {
     });
   }, []);
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const [activeLang, setActiveLang] = useState("Uz");
+  const langClass = (lang) =>
+    `py-2 px-3 font-swiss text-sm font-medium rounded-full transition ${
+      activeLang === lang
+        ? "bg-[#539c9f] text-white"
+        : "bg-white text-[#539c9f] hover:bg-[#539c9f] hover:text-white"
+    }`;
   return (
     <div className="sticky top-0 left-0 w-full z-50 bg-white/70 backdrop-blur shadow">
       <div className="max-w-[1460px] mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/">
+          <NavLink to="/">
             <img className="max-w-40 md:max-w-52" src={Logo} alt="Logo img" />
-          </Link>
+          </NavLink>
 
           <div className="lg:hidden">
             <button
@@ -33,52 +39,76 @@ function Header() {
 
           <ul className="hidden lg:flex justify-between gap-6 xl:gap-8">
             <li>
-              <Link
+              <NavLink
                 to="/"
-                className="hover:underline font-swiss hover:text-[#3b7f82] transition duration-200"
+                className={({ isActive }) =>
+                  isActive
+                    ? "font-swiss text-[#3b7f82] underline"
+                    : "hover:underline font-swiss hover:text-[#3b7f82] transition duration-200"
+                }
               >
                 Bosh Sahifa
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/service"
-                className="hover:underline font-swiss hover:text-[#3b7f82] transition duration-200"
+                className={({ isActive }) =>
+                  isActive
+                    ? "font-swiss text-[#3b7f82] underline"
+                    : "hover:underline font-swiss hover:text-[#3b7f82] transition duration-200"
+                }
               >
                 Xizmatlar
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/dora"
-                className="hover:underline font-swiss hover:text-[#3b7f82] transition duration-200"
+                className={({ isActive }) =>
+                  isActive
+                    ? "font-swiss text-[#3b7f82] underline"
+                    : "hover:underline font-swiss hover:text-[#3b7f82] transition duration-200"
+                }
               >
                 Dora
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
-                to="/portfolio"
-                className="hover:underline font-swiss hover:text-[#3b7f82] transition duration-200"
+              <NavLink
+                to="/Portfolio"
+                className={({ isActive }) =>
+                  isActive
+                    ? "font-swiss text-[#3b7f82] underline"
+                    : "hover:underline font-swiss hover:text-[#3b7f82] transition duration-200"
+                }
               >
                 Portfolio
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/blog"
-                className="hover:underline font-swiss hover:text-[#3b7f82] transition duration-200"
+                className={({ isActive }) =>
+                  isActive
+                    ? "font-swiss text-[#3b7f82] underline"
+                    : "hover:underline font-swiss hover:text-[#3b7f82] transition duration-200"
+                }
               >
                 Blog
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/communication"
-                className="hover:underline font-swiss hover:text-[#3b7f82] transition duration-200"
+                className={({ isActive }) =>
+                  isActive
+                    ? "font-swiss text-[#3b7f82] underline"
+                    : "hover:underline font-swiss hover:text-[#3b7f82] transition duration-200"
+                }
               >
                 Aloqa
-              </Link>
+              </NavLink>
             </li>
           </ul>
 
@@ -92,19 +122,22 @@ function Header() {
             <span className="flex gap-1 bg-[#e5f3f4] p-1 rounded-full">
               <button
                 type="button"
-                className="py-2 px-3 font-swiss text-sm font-medium rounded-full bg-white text-[#539c9f] hover:bg-[#539c9f] hover:text-white transition"
+                className={langClass("En")}
+                onClick={() => setActiveLang("En")}
               >
                 En
               </button>
               <button
                 type="button"
-                className="py-2 px-3 font-swiss text-sm font-medium rounded-full bg-white text-[#539c9f] hover:bg-[#539c9f] hover:text-white transition"
+                className={langClass("Uz")}
+                onClick={() => setActiveLang("Uz")}
               >
                 Uz
               </button>
               <button
                 type="button"
-                className="py-2 px-3 font-swiss text-sm font-medium rounded-full bg-white text-[#539c9f] hover:bg-[#539c9f] hover:text-white transition"
+                className={langClass("Ru")}
+                onClick={() => setActiveLang("Ru")}
               >
                 Ru
               </button>
@@ -129,58 +162,58 @@ function Header() {
           >
             <ul className="flex flex-col gap-2">
               <li>
-                <Link
+                <NavLink
                   to="/"
                   className="block font-swiss py-2 px-4 bg-[#f1f1f1] rounded hover:bg-[#539c9f] hover:text-white transition"
                   onClick={() => setMenuOpen(false)}
                 >
                   Bosh Sahifa
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="/service"
                   className="block font-swiss py-2 px-4 bg-[#f1f1f1] rounded hover:bg-[#539c9f] hover:text-white transition"
                   onClick={() => setMenuOpen(false)}
                 >
                   Xizmatlar
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="/dora"
                   className="block font-swiss py-2 px-4 bg-[#f1f1f1] rounded hover:bg-[#539c9f] hover:text-white transition"
                   onClick={() => setMenuOpen(false)}
                 >
                   Dora
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="/portfolio"
                   className="block font-swiss py-2 px-4 bg-[#f1f1f1] rounded hover:bg-[#539c9f] hover:text-white transition"
                   onClick={() => setMenuOpen(false)}
                 >
                   Portfolio
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="/blog"
                   className="block font-swiss py-2 px-4 bg-[#f1f1f1] rounded hover:bg-[#539c9f] hover:text-white transition"
                   onClick={() => setMenuOpen(false)}
                 >
                   Blog
-                </Link>
+                </NavLink>
               </li>
               <li>
-                <Link
+                <NavLink
                   to="/communication"
                   className="block font-swiss py-2 px-4 bg-[#f1f1f1] rounded hover:bg-[#539c9f] hover:text-white transition"
                   onClick={() => setMenuOpen(false)}
                 >
                   Aloqa
-                </Link>
+                </NavLink>
               </li>
             </ul>
 

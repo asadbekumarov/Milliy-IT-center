@@ -18,51 +18,54 @@ function Footer() {
       >
         <div>
           <img className="max-w-52 mb-4" src={Logo} alt="logo img" />
-          <p className="text-sm my-1">DORA® Будьте уникальными вместе с нами</p>
-          <p className="text-sm my-1">Пн - Сб: 9:00 - 19:00</p>
-          <p className="text-sm my-1">Закрыто по выходным</p>
+          <p className="text-sm my-1">
+            Milliy IT Center - Innovatsiyalarni yaratishda biz bilan birga
+            rivojlaning
+          </p>
+          <p className="text-sm my-1">Dushanba - Juma: 9:00 - 18:00</p>
+          <p className="text-sm my-1">Dam olish kuni: Shanba, Yakshanba</p>
         </div>
 
         <div>
           <h3 className="font-swiss font-semibold text-2xl mb-2">Menyu</h3>
           <ul>
             <li className="text-sm my-1 hover:underline cursor-pointer">
-              Mijozlar
+              Xizmatlar
             </li>
             <li className="text-sm my-1 hover:underline cursor-pointer">
-              Veb-sayt yaratish (Brief)
+              Biz haqimizda
             </li>
             <li className="text-sm my-1 hover:underline cursor-pointer">
-              Tez-tez soraladigan savollar
+              Yangi loyihalar
             </li>
             <li className="text-sm my-1 hover:underline cursor-pointer">
-              Veb-saytga texnik xizmat ko'rsatish
+              Biz bilan bog'lanish
             </li>
             <li className="text-sm my-1 hover:underline cursor-pointer">
-              Bosh ish o'rinlari
+              Talablar va shartlar
             </li>
           </ul>
         </div>
 
         <div>
           <h3 className="font-swiss font-semibold text-2xl mb-2">
-            Faoliyat yo‘nalishlari
+            Bizning faoliyat
           </h3>
           <ul>
             <li className="text-sm my-1 hover:underline cursor-pointer">
-              Ko'ngilochar xizmatlar va media
+              IT konsalting
             </li>
             <li className="text-sm my-1 hover:underline cursor-pointer">
-              Konsolting va Proffesional xizmatlar
+              Veb dasturlash
             </li>
             <li className="text-sm my-1 hover:underline cursor-pointer">
-              Energiya va atrof-muhit
+              Mobil ilovalar yaratish
             </li>
             <li className="text-sm my-1 hover:underline cursor-pointer">
-              Savdo va elektron tijorat
+              Dasturiy ta'minot integratsiyasi
             </li>
             <li className="text-sm my-1 hover:underline cursor-pointer">
-              Axborot texniyologiyalari va telekommunikatsiyalar
+              Kiber xavfsizlik
             </li>
           </ul>
         </div>
@@ -71,11 +74,11 @@ function Footer() {
           <h3 className="font-swiss font-semibold text-2xl mb-2">
             Yangiliklar xabarnomasi
           </h3>
-          <div className="flex items-center border-b border-black px-2 py-1 gap-2">
+          <div className="flex items-center border-b border-black py-1 gap-2">
             <TfiEmail />
             <input
               className="flex-1 outline-none"
-              placeholder="Elektron pochta manzilingiz"
+              placeholder="Yangiliklar uchun elektron pochta qoldiring."
               type="email"
             />
             <RiTelegram2Line />
@@ -93,14 +96,14 @@ function Footer() {
 
       <div className="flex flex-col sm:flex-row gap-4 sm:gap-0 items-center justify-between border-t pt-8 pb-4 text-center sm:text-left">
         <ul className="flex flex-col sm:flex-row items-center text-sm text-[#96989e] gap-2 sm:gap-4">
-          <li className="hover:underline">Xizmat ko'rsatish shartlari</li>
+          <li className="hover:underline">Xizmat shartlari</li>
           <span className="hidden sm:inline">|</span>
           <li className="hover:underline">MAxfiylik siyosati</li>
           <span className="hidden sm:inline">|</span>
           <li className="hover:underline">Cookie siyosati</li>
         </ul>
         <p className="text-[#96989e] text-sm">
-          ©2019- 2025 DORA®. Barcha huquqlar himoyalangan
+          ©2025 Milliy IT Center. Barcha huquqlar himoyalangan.
         </p>
       </div>
     </div>

@@ -12,13 +12,12 @@ function Hero() {
     <div className="max-w-[1460px] mx-auto px-4 py-10">
       <div className="flex mt-20 flex-col-reverse md:flex-row justify-between items-center gap-10">
         <div data-aos="zoom-in-right" className="text-center md:text-left">
-          <h1 className="font-semibold text-4xl md:text-6xl font-swiss max-w-full md:max-w-[630px] text-[#000]">
-            Biznesingiz uchun kompleks yechimlar
+          <h1 className="font-semibold text-sm md:text-4xl font-swiss max-w-full md:max-w-[630px] text-[#000]">
+            Milliy IT Center — biznesingiz uchun SMM, reklama, dizayn, sayt, bot
+            va treninglarni bir joyda taqdim etuvchi raqamli yechimlar markazi.
           </h1>
-          <p className="font-extralight max-w-[670px] pt-6 md:pt-11 text-black text-base md:text-lg font-swiss">
-            DORA – barcha biznes muammolarini bir joyda hal qilish imkoniyati.
-            Turli kompaniyalarga ehtiyoj yo‘q – bizning jamoamiz barchasini
-            uddalaydi!
+          <p className="font-extralight max-w-[670px] pt-4 md:pt-5 text-black text-base md:text-lg font-swiss">
+            Biznesingizga kerak bo‘lgan hamma raqamli yechimlar — bitta joyda!
           </p>
           <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-3 pt-6 md:pt-11">
             <button

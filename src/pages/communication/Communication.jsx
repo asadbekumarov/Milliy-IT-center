@@ -39,13 +39,13 @@ function Communication() {
               to'ldiring. DORA kompaniyasi siz bilan bog'lanishga tayyor.
             </p>
             <div className="flex flex-col space-y-3 pt-10">
-              <div className="flex items-center space-x-3">
+              <di className="flex items-center space-x-3">
                 <FaPhoneAlt
                   data-aos="zoom-in-down"
                   className="bg-[#539c9f] p-2 rounded-full text-white text-3xl"
                 />
                 <p data-aos="zoom-out-right">+998935125324</p>
-              </div>
+              </di>
               <div className="flex items-center space-x-3">
                 <IoMdMail
                   data-aos="zoom-in-down"

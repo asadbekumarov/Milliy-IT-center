@@ -1,14 +1,14 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { FaLock } from "react-icons/fa";
-
+import Slider from "react-slick";
 function Services() {
   const [response, setResponse] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   useEffect(() => {
     axios
-      .get("https://b8ee-90-156-163-233.ngrok-free.app/api/clients", {
+      .get("https://8a61-188-113-199-145.ngrok-free.app/api/companies", {
         headers: {
           "ngrok-skip-browser-warning": "true",
         },
@@ -23,6 +23,31 @@ function Services() {
         setLoading(false);
       });
   }, []);
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 2000,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2,
+    pauseOnHover: true,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
 
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error.message}</div>;
@@ -31,24 +56,19 @@ function Services() {
       <div className="max-w-[1460px] mx-auto px-4 py-4">
         <div>
           {response?.data && response.data.length > 0 ? (
-            response.data.map((client) => (
-              <div key={client.id} className="mb-6">
-                <div className="bg-white p-4 rounded-lg shadow-md">
-                  <div>
+            <Slider {...settings}>
+              {response.data.map((client) => (
+                <div key={client.id} className="px-2">
+                  <div className="h-full flex flex-col">
                     <img
                       src={client.logo}
                       alt="Client"
-                      style={{ maxWidth: "100%", height: "auto" }}
-                      className="rounded-md"
+                      className="rounded-md object-contain max-w-[200px] h-40"
                     />
                   </div>
-                  <div className="mt-4">
-                    <h2 className="text-xl font-semibold">{client.name}</h2>
-                    <p className="text-gray-500">{client.description}</p>
-                  </div>
                 </div>
-              </div>
-            ))
+              ))}
+            </Slider>
           ) : (
             <div>No clients found.</div>
           )}

@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Icon from "../../assets/icon.png";
-import Contact from "../../components/contact/Contact";
 import Aos from "aos";
 import axios from "axios";
-
-function ServicesPage() {
+function Portfolio() {
   const [data, setData] = useState({ services: [], categories: [] });
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -38,7 +36,6 @@ function ServicesPage() {
       });
   }, []);
 
-
   const filteredServices =
     activeCategoryId === "all"
       ? data.services
@@ -61,13 +58,17 @@ function ServicesPage() {
           data-aos="zoom-out-right"
           className="font-semibold text-4xl sm:text-5xl lg:text-6xl font-swiss mt-12 sm:mt-16 lg:mt-24"
         >
-          Xizmatlar
+          Portfolio
         </h2>
         <p
           data-aos="zoom-out-right"
           className="font-semibold text-base sm:text-lg lg:text-xl text-[#646575] font-swiss mt-4 sm:mt-6"
         >
-          DORA® kompaniyasi keng qamrovli xizmatlarni taqdim etadi...
+          DORA kompaniyasi tomonidan amalga oshirilgan muvaffaqiyatli loyihalar
+          bilan tanishing. Bizning mijozlarimiz uchun yaratgan veb-saytlar,
+          marketing kampaniyalari va texnologik yechimlarimiz haqida batafsil
+          ma'lumot oling. DORA bilan birgalikda muvaffaqiyatga erishgan
+          loyihalarimizni ko'ring.
         </p>
 
         <h4
@@ -81,13 +82,13 @@ function ServicesPage() {
           <button
             onClick={() => setActiveCategoryId("all")}
             className={`font-normal text-sm sm:text-base lg:text-xl py-2 px-3 sm:px-4 rounded-full 
-            transition-all duration-300 ease-in-out 
-            hover:bg-blue-600 hover:text-white 
-            ${
-              activeCategoryId === "all"
-                ? "bg-blue-600 text-white"
-                : "bg-[#f8f9fa]"
-            }`}
+                transition-all duration-300 ease-in-out 
+                hover:bg-blue-600 hover:text-white 
+                ${
+                  activeCategoryId === "all"
+                    ? "bg-blue-600 text-white"
+                    : "bg-[#f8f9fa]"
+                }`}
           >
             Barchasi ko‘rish
           </button>
@@ -97,13 +98,13 @@ function ServicesPage() {
               key={category.id}
               onClick={() => setActiveCategoryId(category.id)}
               className={`font-normal text-sm sm:text-base lg:text-xl py-2 px-3 sm:px-4 rounded-full 
-              transition-all duration-300 ease-in-out 
-              hover:bg-blue-600 hover:text-white 
-              ${
-                activeCategoryId === category.id
-                  ? "bg-blue-600 text-white"
-                  : "bg-[#f8f9fa]"
-              }`}
+                  transition-all duration-300 ease-in-out 
+                  hover:bg-blue-600 hover:text-white 
+                  ${
+                    activeCategoryId === category.id
+                      ? "bg-blue-600 text-white"
+                      : "bg-[#f8f9fa]"
+                  }`}
             >
               {category.name}
             </button>
@@ -137,9 +138,8 @@ function ServicesPage() {
           )}
         </div>
       </div>
-      <Contact />
     </div>
   );
 }
 
-export default ServicesPage;
+export default Portfolio;

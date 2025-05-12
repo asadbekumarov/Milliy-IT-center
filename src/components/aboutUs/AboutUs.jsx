@@ -30,7 +30,8 @@ function AboutUs() {
             data-aos="zoom-in-right"
             className="font-semibold text-3xl lg:text-6xl max-w-full lg:max-w-[900px] mt-6 font-swiss"
           >
-            Biz qaysi sohalarda yechim berdik? Bosing va bilib oling!
+            Biz mijozlarimizga raqamli dunyoda muvaffaqiyatga erishishlari uchun
+            yordam beramiz.
           </h2>
           <Link
             data-aos="zoom-in-left"
@@ -44,29 +45,33 @@ function AboutUs() {
           <div data-aos="zoom-in-right" className="flex flex-col gap-2 w-full">
             <Link className="flex items-center gap-2 text-lg lg:text-xl bg-[#e5f3f4] rounded-lg p-2">
               <AiFillTool />
-              Ishlab chiqarish va sanoat 4.0
+              Raqamlashtirish orqali ishlab chiqarish jarayonlarini
+              avtomatlashtirish va optimallashtirish.
             </Link>
             <Link className="flex items-center gap-2 text-lg lg:text-xl bg-[#e5f3f4] rounded-lg p-2">
               <PiForkKnife />
-              Oziq-ovqat sanoati, kafe va restoranlar
+              Brending, SMM, va raqamli marketing orqali mijoz oqimini oshirish.
             </Link>
             <Link className="flex items-center gap-2 text-lg lg:text-xl bg-[#e5f3f4] rounded-lg p-2">
               <FaChalkboardTeacher />
-              Ta’lim va o‘qitish
+              Interaktiv platformalar, kontent yaratuvchiligi va foydalanuvchi
+              tajribasi bilan boyitilgan yechimlar.
             </Link>
           </div>
           <div data-aos="zoom-in-left" className="flex flex-col gap-2 w-full">
             <Link className="flex items-center gap-2 text-lg lg:text-xl bg-[#e5f3f4] rounded-lg p-2">
               <FaUniversity />
-              Moliyaviy xizmatlar va bank ishi
+              Mijozlar ishonchini oshiradigan xavfsiz va samarali tizimlar.
             </Link>
             <Link className="flex items-center gap-2 text-lg lg:text-xl bg-[#e5f3f4] rounded-lg p-2">
               <FaMapLocationDot />
-              Turizm va mehmonxona xizmati
+              Onlayn bron qilish tizimlari, reklama strategiyalari va brending
+              yechimlari.
             </Link>
             <Link className="flex items-center gap-2 text-lg lg:text-xl bg-[#e5f3f4] rounded-lg p-2">
               <MdOutlineHealthAndSafety />
-              Sog‘liqni saqlash va farmatsevtika
+              CRM joriy etish, mijozlar bilan aloqani kuchaytiruvchi tizimlar va
+              onlayn xizmatlar.
             </Link>
           </div>
         </div>
@@ -76,16 +81,21 @@ function AboutUs() {
               <p className="bg-[#539c9f] inline-block p-1 font-swiss text-white">
                 Biz Haqimizda
               </p>
-              <h3 className="font-extrabold text-3xl lg:text-6xl max-w-full lg:max-w-[600px] font-swiss mt-4">
-                Biz texnologiya muammolarini hal qilamiz
+              <h3 className="font-extrabold text-xl lg:text-3xl max-w-full lg:max-w-[600px] font-swiss mt-4">
+                Milliy IT Center — texnologiyalar va innovatsiyalar orqali
+                yuksak natijalarga erishishni ta’minlaydigan yetakchi kompaniya.
               </h3>
             </div>
             <div data-aos="zoom-in-left" className="mt-6 lg:mt-0">
-              <p className="font-swiss text-lg lg:text-2xl pb-8 max-w-full lg:max-w-[500px]">
-                350 dan ortiq kompaniyalar ishonchini qozongan DORA turli
-                sohalarda, jumladan, ishlab chiqarish va farmatsevtikada,
-                biznesni rivojlantirish va jarayonlarni optimallashtirish uchun
-                maxsus yechimlarni taklif etadi.
+              <p className="font-swiss text-lg lg:text-xl pb-8 max-w-full lg:max-w-[500px]">
+                Milliy IT Center 5 yillik tajribaga ega bo‘lib, IT sohasida
+                yuqori sifatli texnologik xizmatlar va yechimlar taqdim etadi.
+                Bizning 350 dan ortiq mijozlarimiz ishonch bilan bizni
+                tanlashmoqda. Bizning xizmatlarimiz raqamli transformatsiya,
+                biznesni rivojlantirish, jarayonlarni optimallashtirish, va
+                ishlab chiqarishni avtomatlashtirishga qaratilgan. Milliy IT
+                Center yuqori malakali mutaxassislar va innovatsion
+                texnologiyalar bilan to‘liq xizmat ko‘rsatadi..
               </p>
               <Link
                 className="font-bold text-lg lg:text-2xl font-swiss relative overflow-hidden group"

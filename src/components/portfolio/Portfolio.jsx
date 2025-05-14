@@ -26,7 +26,7 @@ function Portfolio() {
           Barchasini ko'rish
         </Link>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-6 px-4 max-w-[1460px] mx-auto">
+      {/* <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-6 px-4 max-w-[1460px] mx-auto">
         <div
           data-aos="zoom-out-right"
           className="relative w-full h-[300px] sm:h-[400px] overflow-hidden group rounded-2xl shadow-2xl"
@@ -95,7 +95,7 @@ function Portfolio() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

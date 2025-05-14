@@ -14,11 +14,11 @@ function ServicesPage() {
     Aos.init({ duration: 1000, once: true });
 
     const servicesRequest = axios.get(
-      "https://8a61-188-113-199-145.ngrok-free.app/api/services",
+      "https://5fa5-188-113-221-60.ngrok-free.app/api/service-description",
       { headers: { "ngrok-skip-browser-warning": "true" } }
     );
     const categoriesRequest = axios.get(
-      "https://8a61-188-113-199-145.ngrok-free.app/api/categories",
+      "https://5fa5-188-113-221-60.ngrok-free.app/api/service-description",
       { headers: { "ngrok-skip-browser-warning": "true" } }
     );
 
@@ -37,7 +37,6 @@ function ServicesPage() {
         setLoading(false);
       });
   }, []);
-
 
   const filteredServices =
     activeCategoryId === "all"

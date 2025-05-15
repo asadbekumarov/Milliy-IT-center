@@ -23,15 +23,15 @@ function AboutUs() {
           data-aos="zoom-in"
           className="bg-[#e5f3f4] font-swiss text-[#539c9f] p-2 rounded-md font-bold text-base inline-block mt-10"
         >
-          Biz nima qilamiz
+          MIC o'zi nega kerak?
         </p>
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
           <h2
             data-aos="zoom-in-right"
             className="font-semibold text-3xl lg:text-6xl max-w-full lg:max-w-[900px] mt-6 font-swiss"
           >
-            Biz mijozlarimizga raqamli dunyoda muvaffaqiyatga erishishlari uchun
-            yordam beramiz.
+            Biz o'z mijozlarimizga ularning raqobatchilaridan o'zib ketishiga va
+            biznesini gullab yashnashiga katta yordam beramiz.
           </h2>
           <Link
             data-aos="zoom-in-left"
@@ -82,20 +82,15 @@ function AboutUs() {
                 Biz Haqimizda
               </p>
               <h3 className="font-extrabold text-xl lg:text-3xl max-w-full lg:max-w-[600px] font-swiss mt-4">
-                Milliy IT Center — texnologiyalar va innovatsiyalar orqali
-                yuksak natijalarga erishishni ta’minlaydigan yetakchi kompaniya.
+                Milliy IT Center - bu yechim emas! Bu natija.
               </h3>
             </div>
             <div data-aos="zoom-in-left" className="mt-6 lg:mt-0">
               <p className="font-swiss text-lg lg:text-xl pb-8 max-w-full lg:max-w-[500px]">
-                Milliy IT Center 5 yillik tajribaga ega bo‘lib, IT sohasida
-                yuqori sifatli texnologik xizmatlar va yechimlar taqdim etadi.
-                Bizning 350 dan ortiq mijozlarimiz ishonch bilan bizni
-                tanlashmoqda. Bizning xizmatlarimiz raqamli transformatsiya,
-                biznesni rivojlantirish, jarayonlarni optimallashtirish, va
-                ishlab chiqarishni avtomatlashtirishga qaratilgan. Milliy IT
-                Center yuqori malakali mutaxassislar va innovatsion
-                texnologiyalar bilan to‘liq xizmat ko‘rsatadi..
+                Milliy IT Center - 5 yillik tajribaga ega bo'lib hozirgacha 350
+                dan ortiq mijozlarni ishonchini qozongan va hozirda ulardan 324
+                ta loyiha muvaffaqiyatli yakunlangan va 26 ta loyiha bilan hali
+                hamon ishlashda davom etmoqdamiz.
               </p>
               <Link
                 className="font-bold text-lg lg:text-2xl font-swiss relative overflow-hidden group"

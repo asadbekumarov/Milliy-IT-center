@@ -12,11 +12,12 @@ function Communication() {
       once: true,
     });
   }, []);
+
   return (
     <div className="bg-gradient-to-b from-[#539c9f] to-[#ffffff] w-full">
       <div className="max-w-[1460px] mx-auto px-4 py-4">
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-10 pt-20">
-          <div className="flex-1">
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-6 sm:gap-10 pt-10 sm:pt-20">
+          <div className="flex-1 w-full">
             <h3
               data-aos="zoom-out-right"
               className="bg-[#e5f3f4] inline-block p-2 text-[#539c9f] rounded-md font-bold font-swiss text-sm"
@@ -25,7 +26,7 @@ function Communication() {
             </h3>
             <h2
               data-aos="zoom-out-right"
-              className="font-semibold text-4xl sm:text-5xl md:text-6xl pt-5"
+              className="font-semibold text-3xl sm:text-5xl md:text-6xl pt-5"
             >
               Aloqa
             </h2>
@@ -33,188 +34,122 @@ function Communication() {
               data-aos="zoom-out-right"
               className="text-base sm:text-lg max-w-[600px] py-4"
             >
-              Sizda savollar bormi yoki bizning xizmatlarimiz haqida qo'shimcha
-              ma'lumot kerakmi? Biz bilan bog'lanish uchun quyidagi kontakt
-              ma'lumotlaridan foydalaning yoki onlayn murojaat shaklini
-              to'ldiring. DORA kompaniyasi siz bilan bog'lanishga tayyor.
+              Sizda savollar bormi yoki bizning xizmatlarimiz haqida qo'shimcha ma'lumot kerakmi? 
+              Biz bilan bog'lanish uchun quyidagi kontakt ma'lumotlaridan foydalaning yoki 
+              onlayn murojaat shaklini to'ldiring. DORA kompaniyasi siz bilan bog'lanishga tayyor.
             </p>
-            <div className="flex flex-col space-y-3 pt-10">
-              <di className="flex items-center space-x-3">
+            <div className="flex flex-col space-y-3 pt-6 sm:pt-10">
+              <div className="flex items-center space-x-3">
                 <FaPhoneAlt
                   data-aos="zoom-in-down"
-                  className="bg-[#539c9f] p-2 rounded-full text-white text-3xl"
+                  className="bg-[#539c9f] p-2 rounded-full text-white text-2xl sm:text-3xl"
                 />
-                <p data-aos="zoom-out-right">+998935125324</p>
-              </di>
+                <p data-aos="zoom-out-right" className="text-sm sm:text-base">+998935125324</p>
+              </div>
               <div className="flex items-center space-x-3">
                 <IoMdMail
                   data-aos="zoom-in-down"
-                  className="bg-[#539c9f] p-2 rounded-full text-white text-3xl"
+                  className="bg-[#539c9f] p-2 rounded-full text-white text-2xl sm:text-3xl"
                 />
-                <p data-aos="zoom-out-right">info@dora.uz</p>
+                <p data-aos="zoom-out-right" className="text-sm sm:text-base">info@dora.uz</p>
               </div>
               <div className="flex items-center space-x-3">
                 <TfiLocationPin
                   data-aos="zoom-in-down"
-                  className="bg-[#539c9f] p-2 rounded-full text-white text-3xl"
+                  className="bg-[#539c9f] p-2 rounded-full text-white text-2xl sm:text-3xl"
                 />
-                <p data-aos="zoom-out-right" className="text-base">
+                <p data-aos="zoom-out-right" className="text-sm sm:text-base">
                   O‘zbekiston, Toshkent shahri, Chilonzor 2/2
                 </p>
               </div>
             </div>
           </div>
+
           <div
             data-aos="zoom-in"
-            className="w-full lg:w-[500px] bg-white bg-gradient-to-t from-[#539c9f] to-[#ffffff] p-5 rounded-lg shadow-md"
+            className="w-full lg:w-[500px] bg-white bg-gradient-to-t from-[#539c9f] to-[#ffffff] p-4 sm:p-5 rounded-lg shadow-md"
           >
-            <h3  className="text-xl font-semibold">Bepul konsultatsiya oling</h3>
-            <div className="space-y-4">
-              <div >
-                <p className="py-2">Ism</p>
-                <input
-                  className="border outline-none py-3 px-3 rounded-md w-full focus:ring-2 focus:ring-[#539c9f]"
-                  placeholder="Ism"
-                  type="text"
-                />
-              </div>
-              <div >
-                <p className="py-2">Telefon</p>
-                <input
-                  className="border outline-none py-3 px-3 rounded-md w-full focus:ring-2 focus:ring-[#539c9f]"
-                  placeholder="Telefon"
-                  type="text"
-                />
-              </div>
-              <div >
-                <p className="py-2">Kompaniya nomi</p>
-                <input
-                  className="border outline-none py-3 px-3 rounded-md w-full focus:ring-2 focus:ring-[#539c9f]"
-                  placeholder="Kompaniya nomi"
-                  type="text"
-                />
-              </div>
+            <h3 className="text-lg sm:text-xl font-semibold">Bepul konsultatsiya oling</h3>
+            <div className="space-y-4 mt-4">
+              {["Ism", "Telefon", "Kompaniya nomi"].map((label, idx) => (
+                <div key={idx}>
+                  <p className="py-1 sm:py-2">{label}</p>
+                  <input
+                    className="border outline-none py-2 px-3 rounded-md w-full focus:ring-2 focus:ring-[#539c9f] min-w-0"
+                    placeholder={label}
+                    type="text"
+                  />
+                </div>
+              ))}
               <div>
-                <p className="py-2">Biz sizga qanday yordam bera olamiz?</p>
-                <select className="border outline-none py-3 px-3 rounded-md w-full focus:ring-2 focus:ring-[#539c9f]">
-                  <option value="">Korporativ veb-saytlar</option>
-                  <option value="">Landing page</option>
-                  <option value="">Katalog sayt</option>
-                  <option value="">Internet do'kon</option>
-                  <option value="">Marketplace</option>
-                  <option value="">SMM xizmati</option>
-                  <option value="">Logo yaratish</option>
-                  <option value="">Brandbook yaratish</option>
-                  <option value="">Marketing xizmati</option>
-                  <option value="">amoCRM</option>
-                  <option value="">Maqsadli reklama</option>
-                  <option value="">Mobil ilovalar yaratish</option>
-                  <option value="">МойСклад</option>
-                  <option value="">IP Telefoniya</option>
-                  <option value="">SEO</option>
-                  <option value="">Qidiruv tizimi reklama xizmatlari</option>
-                  <option value="">ERP</option>
-                  <option value="Business Intelligence/Data Analytics">
-                    Business Intelligence/Data Analytics
-                  </option>
-                  <option value="">1C</option>
-                  <option value="">Telegram Bot</option>
+                <p className="py-1 sm:py-2">Biz sizga qanday yordam bera olamiz?</p>
+                <select className="border outline-none py-2 px-3 rounded-md w-full focus:ring-2 focus:ring-[#539c9f]">
+                  {[
+                    "Korporativ veb-saytlar", "Landing page", "Katalog sayt", "Internet do'kon", "Marketplace",
+                    "SMM xizmati", "Logo yaratish", "Brandbook yaratish", "Marketing xizmati", "amoCRM",
+                    "Maqsadli reklama", "Mobil ilovalar yaratish", "МойСклад", "IP Telefoniya", "SEO",
+                    "Qidiruv tizimi reklama xizmatlari", "ERP", "Business Intelligence/Data Analytics", "1C", "Telegram Bot"
+                  ].map((item, idx) => (
+                    <option key={idx} value="">{item}</option>
+                  ))}
                 </select>
               </div>
               <div>
-                <p className="py-2">Xabaringizni kiriting</p>
+                <p className="py-1 sm:py-2">Xabaringizni kiriting</p>
                 <textarea
-                  className="border outline-none py-3 px-3 rounded-md w-full focus:ring-2 focus:ring-[#539c9f]"
+                  className="border outline-none py-2 px-3 rounded-md w-full focus:ring-2 focus:ring-[#539c9f]"
                   rows={4}
                   placeholder="Xabaringizni kiriting"
                 />
               </div>
-              <div className="flex flex-col md:flex-row items-stretch gap-4">
+              <div className="flex flex-col sm:flex-row items-stretch gap-3">
                 <div className="flex flex-col flex-grow">
-                  <p className="text-sm py-2">Tasdiqlash kodini kiriting</p>
+                  <p className="text-sm py-1">Tasdiqlash kodini kiriting</p>
                   <input
-                    className="border px-3 py-3 rounded-md w-full outline-none focus:ring-2 focus:ring-[#539c9f]"
+                    className="border px-3 py-2 rounded-md w-full outline-none focus:ring-2 focus:ring-[#539c9f]"
                     type="text"
                   />
                 </div>
                 <div className="flex gap-2 items-end">
-                  <button className="bg-[#e5f3f4] px-4 py-3 rounded-md">
+                  <button className="bg-[#e5f3f4] px-4 py-2 rounded-md text-sm">
                     asdfgh
                   </button>
-                  <button className="w-[48px] h-[48px] flex items-center justify-center rounded-lg bg-[#539c9f] hover:bg-[#3c7f82] transition">
-                    <FaArrowsRotate className="text-white" />
+                  <button className="w-[44px] h-[44px] flex items-center justify-center rounded-lg bg-[#539c9f] hover:bg-[#3c7f82] transition">
+                    <FaArrowsRotate className="text-white text-lg" />
                   </button>
                 </div>
               </div>
-              <button className="bg-[#539c9f] border text-white w-full py-3 mt-2 rounded-md font-semibold text-lg hover:bg-[#3c7f82] transition">
+              <button className="bg-[#539c9f] border text-white w-full py-3 mt-2 rounded-md font-semibold text-base hover:bg-[#3c7f82] transition">
                 Yuborish
               </button>
             </div>
           </div>
         </div>
-        <div>
-          <h3 data-aos="zoom-out-right" className="font-medium text-5xl mt-10">
+
+        <div className="mt-16">
+          <h3 data-aos="zoom-out-right" className="font-medium text-3xl sm:text-5xl">
             Bizning joylashuvlarimiz
           </h3>
-          <p data-aos="zoom-out-right" className="text-lg text-[#84848d] py-3 mt-5">
+          <p data-aos="zoom-out-right" className="text-base sm:text-lg text-[#84848d] py-3 mt-2">
             Bizning merosimiz va o'sishimiz yo'lini kuzatish
           </p>
-          <div  className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
-            <div data-aos="zoom-out-right" className="p-4 rounded-xl w-full shadow-lg text-black bg-gradient-to-r from-[#539c9f] via-[#ffffff] to-[#539c9f]">
-              <h4 className="font-semibold text-2xl font-swiss">
-                DORA® System
-              </h4>
-              <span>
-                <p className="text-lg text-[#6c6d77]">Address:</p>
-                <p className="font-medium text-lg">Chilanzar street 2/2</p>
-              </span>
-              <div></div>
-              <span>
-                <p className="text-lg text-[#6c6d77]">Phone Number:</p>
-                <p className="font-medium text-lg">+998935135324</p>
-              </span>
-            </div>
-            <div data-aos="zoom-out-right" className="p-4 rounded-xl w-full shadow-lg text-black bg-gradient-to-r from-[#539c9f] via-[#ffffff] to-[#539c9f]">
-              <h4 className="font-semibold text-2xl font-swiss">
-                DORA® System
-              </h4>
-              <span>
-                <p className="text-lg text-[#6c6d77]">Address:</p>
-                <p className="font-medium text-lg">Chilanzar street 2/2</p>
-              </span>
-              <span>
-                <p className="text-lg text-[#6c6d77]">Phone Number:</p>
-                <p className="font-medium text-lg">+998935135324</p>
-              </span>
-            </div>
-            <div data-aos="zoom-out-left" className="p-4 rounded-xl w-full shadow-lg text-black bg-gradient-to-r from-[#539c9f] via-[#ffffff] to-[#539c9f]">
-              <h4 className="font-semibold text-2xl font-swiss">
-                DORA® System
-              </h4>
-              <span>
-                <p className="text-lg text-[#6c6d77]">Address:</p>
-                <p className="font-medium text-lg">Chilanzar street 2/2</p>
-              </span>
-              <span>
-                <p className="text-lg text-[#6c6d77]">Phone Number:</p>
-                <p className="font-medium text-lg">+998935135324</p>
-              </span>
-            </div>
-            <div data-aos="zoom-out-left" className="p-4 rounded-xl w-full shadow-lg text-black bg-gradient-to-r from-[#539c9f] via-[#ffffff] to-[#539c9f]">
-              <h4 className="font-semibold text-2xl font-swiss">
-                DORA® System
-              </h4>
-              <span>
-                <p className="text-lg text-[#6c6d77]">Address:</p>
-                <p className="font-medium text-lg">Chilanzar street 2/2</p>
-              </span>
-              <span>
-                <p className="text-lg text-[#6c6d77]">Phone Number:</p>
-                <p className="font-medium text-lg">+998935135324</p>
-              </span>
-            </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
+            {[1, 2, 3, 4].map((_, idx) => (
+              <div key={idx} data-aos="zoom-out-right" className="p-4 rounded-xl w-full shadow-lg text-black bg-gradient-to-r from-[#539c9f] via-[#ffffff] to-[#539c9f]">
+                <h4 className="font-semibold text-xl sm:text-2xl font-swiss">DORA® System</h4>
+                <div className="mt-2">
+                  <p className="text-sm sm:text-lg text-[#6c6d77]">Address:</p>
+                  <p className="font-medium text-sm sm:text-lg">Chilanzar street 2/2</p>
+                </div>
+                <div className="mt-1">
+                  <p className="text-sm sm:text-lg text-[#6c6d77]">Phone Number:</p>
+                  <p className="font-medium text-sm sm:text-lg">+998935135324</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
+
       </div>
     </div>
   );

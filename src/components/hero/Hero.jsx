@@ -13,11 +13,11 @@ function Hero() {
       <div className="flex mt-20 flex-col-reverse md:flex-row justify-between items-center gap-10">
         <div data-aos="zoom-in-right" className="text-center md:text-left">
           <h1 className="font-semibold text-sm md:text-4xl font-swiss max-w-full md:max-w-[630px] text-[#000]">
-            Milliy IT Center — biznesingiz uchun SMM, reklama, dizayn, sayt, bot
-            va treninglarni bir joyda taqdim etuvchi raqamli yechimlar markazi.
+            Milliy IT Center - bu yechim emas! Bu natija
           </h1>
           <p className="font-extralight max-w-[670px] pt-4 md:pt-5 text-black text-base md:text-lg font-swiss">
-            Biznesingizga kerak bo‘lgan hamma raqamli yechimlar — bitta joyda!
+            Biznesingiz uchun siz qidirgan barcha turdagi hizmatlarni bir yerga
+            jamladik va uni Milliy IT Center deb atadik{" "}
           </p>
           <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-3 pt-6 md:pt-11">
             <button

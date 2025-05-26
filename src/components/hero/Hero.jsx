@@ -1,6 +1,6 @@
 import Aos from "aos";
 import { useEffect, useState } from "react";
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
 import Brand from "./../../assets/heroimg/brandingImg.png";
 import Crm from "./../../assets/heroimg/crmImg.png";
 import Grafik from "./../../assets/heroimg/grafikDizaynImg.png";
@@ -17,13 +17,13 @@ import "slick-carousel/slick/slick-theme.css";
 function Hero() {
   const [sliderKey, setSliderKey] = useState(0);
 
-  useEffect(() => {
-    Aos.init({
-      duration: 1000,
-      once: true,
-    });
-    setSliderKey((prevKey) => prevKey + 1);
-  }, []);
+  // useEffect(() => {
+  //   Aos.init({
+  //     duration: 1000,
+  //     once: true,
+  //   });
+  //   setSliderKey((prevKey) => prevKey + 1);
+  // }, []);
 
   const settings = {
     dots: false,
@@ -81,7 +81,7 @@ function Hero() {
           </div>
         </div>
 
-        <div className="max-w-[550px] text-start" data-aos="zoom-in-left">
+        <div className="max-w-[550px] text-start">
           <Slider {...settings} key={sliderKey}>
             <img src={Brand} alt="Brand" />
             <img src={Crm} alt="Crm" />

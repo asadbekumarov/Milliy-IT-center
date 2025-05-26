@@ -82,7 +82,7 @@ function Hero() {
         </div>
 
         <div
-          className="max-w-[550px] text-start border"
+          className="max-w-[550px] text-start"
           data-aos="zoom-in-left"
         >
           <Slider {...settings} key={sliderKey}>

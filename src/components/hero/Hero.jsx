@@ -81,8 +81,12 @@ function Hero() {
           </div>
         </div>
 
-        <div className="max-w-[550px] text-start border" data-aos="zoom-in-left">
+        <div
+          className="max-w-[550px] text-start border"
+          data-aos="zoom-in-left"
+        >
           <Slider {...settings} key={sliderKey}>
+            <p>a</p>
             <img src={Brand} alt="Brand" />
             <img src={Crm} alt="Crm" />
             <img src={Grafik} alt="Grafik" />
@@ -93,6 +97,7 @@ function Hero() {
             <img src={Smm} alt="Smm" />
             <img src={Veb} alt="Veb" />
           </Slider>
+          <img src={Veb} alt="Veb" />
         </div>
       </div>
     </div>

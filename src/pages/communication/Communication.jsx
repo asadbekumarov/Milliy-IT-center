@@ -14,9 +14,9 @@ function Communication() {
   }, []);
 
   return (
-    <div className="bg-gradient-to-b from-[#539c9f] to-[#ffffff] w-full">
+    <div className="wave-gradient-bg animate-wave-gradient w-full pb-32">
       <div className="max-w-[1460px] mx-auto px-4 py-4">
-        <div className="flex flex-col lg:flex-row justify-between items-start gap-6 sm:gap-10 pt-10 sm:pt-20">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-6 sm:gap-10 pt-10">
           <div className="flex-1 w-full">
             <h3
               data-aos="zoom-out-right"
@@ -26,7 +26,7 @@ function Communication() {
             </h3>
             <h2
               data-aos="zoom-out-right"
-              className="font-semibold text-3xl sm:text-5xl md:text-6xl pt-5"
+              className="font-semibold text-3xl py-5 sm:text-5xl md:text-6xl pt-5"
             >
               Aloqa
             </h2>
@@ -34,24 +34,29 @@ function Communication() {
               data-aos="zoom-out-right"
               className="text-base sm:text-lg max-w-[600px] py-4"
             >
-              Sizda savollar bormi yoki bizning xizmatlarimiz haqida qo'shimcha ma'lumot kerakmi? 
-              Biz bilan bog'lanish uchun quyidagi kontakt ma'lumotlaridan foydalaning yoki 
-              onlayn murojaat shaklini to'ldiring. DORA kompaniyasi siz bilan bog'lanishga tayyor.
+              Sizda savollar bormi yoki bizning xizmatlarimiz haqida qo'shimcha
+              ma'lumot kerakmi? Biz bilan bog'lanish uchun quyidagi kontakt
+              ma'lumotlaridan foydalaning yoki onlayn murojaat shaklini
+              to'ldiring. DORA kompaniyasi siz bilan bog'lanishga tayyor.
             </p>
-            <div className="flex flex-col space-y-3 pt-6 sm:pt-10">
+            <div className="flex flex-col space-y-3">
               <div className="flex items-center space-x-3">
                 <FaPhoneAlt
                   data-aos="zoom-in-down"
                   className="bg-[#539c9f] p-2 rounded-full text-white text-2xl sm:text-3xl"
                 />
-                <p data-aos="zoom-out-right" className="text-sm sm:text-base">+998935125324</p>
+                <p data-aos="zoom-out-right" className="text-sm sm:text-base">
+                  +998935125324
+                </p>
               </div>
               <div className="flex items-center space-x-3">
                 <IoMdMail
                   data-aos="zoom-in-down"
                   className="bg-[#539c9f] p-2 rounded-full text-white text-2xl sm:text-3xl"
                 />
-                <p data-aos="zoom-out-right" className="text-sm sm:text-base">info@dora.uz</p>
+                <p data-aos="zoom-out-right" className="text-sm sm:text-base">
+                  info@dora.uz
+                </p>
               </div>
               <div className="flex items-center space-x-3">
                 <TfiLocationPin
@@ -69,7 +74,9 @@ function Communication() {
             data-aos="zoom-in"
             className="w-full lg:w-[500px] bg-white bg-gradient-to-t from-[#539c9f] to-[#ffffff] p-4 sm:p-5 rounded-lg shadow-md"
           >
-            <h3 className="text-lg sm:text-xl font-semibold">Bepul konsultatsiya oling</h3>
+            <h3 className="text-lg sm:text-xl font-semibold">
+              Bepul konsultatsiya oling
+            </h3>
             <div className="space-y-4 mt-4">
               {["Ism", "Telefon", "Kompaniya nomi"].map((label, idx) => (
                 <div key={idx}>
@@ -82,15 +89,35 @@ function Communication() {
                 </div>
               ))}
               <div>
-                <p className="py-1 sm:py-2">Biz sizga qanday yordam bera olamiz?</p>
+                <p className="py-1 sm:py-2">
+                  Biz sizga qanday yordam bera olamiz?
+                </p>
                 <select className="border outline-none py-2 px-3 rounded-md w-full focus:ring-2 focus:ring-[#539c9f]">
                   {[
-                    "Korporativ veb-saytlar", "Landing page", "Katalog sayt", "Internet do'kon", "Marketplace",
-                    "SMM xizmati", "Logo yaratish", "Brandbook yaratish", "Marketing xizmati", "amoCRM",
-                    "Maqsadli reklama", "Mobil ilovalar yaratish", "МойСклад", "IP Telefoniya", "SEO",
-                    "Qidiruv tizimi reklama xizmatlari", "ERP", "Business Intelligence/Data Analytics", "1C", "Telegram Bot"
+                    "Korporativ veb-saytlar",
+                    "Landing page",
+                    "Katalog sayt",
+                    "Internet do'kon",
+                    "Marketplace",
+                    "SMM xizmati",
+                    "Logo yaratish",
+                    "Brandbook yaratish",
+                    "Marketing xizmati",
+                    "amoCRM",
+                    "Maqsadli reklama",
+                    "Mobil ilovalar yaratish",
+                    "МойСклад",
+                    "IP Telefoniya",
+                    "SEO",
+                    "Qidiruv tizimi reklama xizmatlari",
+                    "ERP",
+                    "Business Intelligence/Data Analytics",
+                    "1C",
+                    "Telegram Bot",
                   ].map((item, idx) => (
-                    <option key={idx} value="">{item}</option>
+                    <option key={idx} value="">
+                      {item}
+                    </option>
                   ))}
                 </select>
               </div>
@@ -127,29 +154,46 @@ function Communication() {
         </div>
 
         <div className="mt-16">
-          <h3 data-aos="zoom-out-right" className="font-medium text-3xl sm:text-5xl">
+          <h3
+            data-aos="zoom-out-right"
+            className="font-medium text-3xl sm:text-5xl"
+          >
             Bizning joylashuvlarimiz
           </h3>
-          <p data-aos="zoom-out-right" className="text-base sm:text-lg text-[#84848d] py-3 mt-2">
+          <p
+            data-aos="zoom-out-right"
+            className="text-base sm:text-lg text-[#84848d] py-3 mt-2"
+          >
             Bizning merosimiz va o'sishimiz yo'lini kuzatish
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
             {[1, 2, 3, 4].map((_, idx) => (
-              <div key={idx} data-aos="zoom-out-right" className="p-4 rounded-xl w-full shadow-lg text-black bg-gradient-to-r from-[#539c9f] via-[#ffffff] to-[#539c9f]">
-                <h4 className="font-semibold text-xl sm:text-2xl font-swiss">DORA® System</h4>
+              <div
+                key={idx}
+                data-aos="zoom-out-right"
+                className="p-4 rounded-xl w-full shadow-lg text-black bg-white"
+              >
+                <h4 className="font-semibold text-xl sm:text-2xl font-swiss">
+                  DORA® System
+                </h4>
                 <div className="mt-2">
                   <p className="text-sm sm:text-lg text-[#6c6d77]">Address:</p>
-                  <p className="font-medium text-sm sm:text-lg">Chilanzar street 2/2</p>
+                  <p className="font-medium text-sm sm:text-lg">
+                    Chilanzar street 2/2
+                  </p>
                 </div>
                 <div className="mt-1">
-                  <p className="text-sm sm:text-lg text-[#6c6d77]">Phone Number:</p>
-                  <p className="font-medium text-sm sm:text-lg">+998935135324</p>
+                  <p className="text-sm sm:text-lg text-[#6c6d77]">
+                    Phone Number:
+                  </p>
+                  <p className="font-medium text-sm sm:text-lg">
+                    +998935135324
+                  </p>
                 </div>
               </div>
             ))}
           </div>
         </div>
-
       </div>
     </div>
   );

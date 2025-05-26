@@ -6,6 +6,8 @@ import { FaChalkboardTeacher } from "react-icons/fa";
 import { FaUniversity } from "react-icons/fa";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { MdOutlineHealthAndSafety } from "react-icons/md";
+import { FaEye } from "react-icons/fa";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -21,72 +23,73 @@ function AboutUs() {
       <div>
         <p
           data-aos="zoom-in"
-          className="bg-[#e5f3f4] font-swiss text-[#539c9f] p-2 rounded-md font-bold text-base inline-block mt-10"
+          className="bg-[#e5f3f4] font-swiss text-[#539c9f] p-2 rounded-md font-bold text-base inline-block mt-10 mb-6"
         >
           MIC o'zi nega kerak?
         </p>
-        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
+        <div className="flex flex-col lg:flex-row items-start lg:items-start justify-between">
           <h2
             data-aos="zoom-in-right"
-            className="font-semibold text-3xl lg:text-6xl max-w-full lg:max-w-[900px] mt-6 font-swiss"
+            className="font-semibold text-3xl lg:text-5xl max-w-full lg:max-w-[900px]  font-swiss"
           >
             Biz o'z mijozlarimizga ularning raqobatchilaridan o'zib ketishiga va
             biznesini gullab yashnashiga katta yordam beramiz.
           </h2>
           <Link
             data-aos="zoom-in-left"
-            className="font-semibold text-xl lg:text-2xl underline hover:text-[#539c9f] mt-4 lg:mt-0"
+            className="font-semibold flex items-end gap-2 text-xl lg:text-2xl underline hover:text-[#539c9f] mt-4 lg:mt-0"
             to="/"
           >
+            <FaEye />
             Barchasini ko'rish
           </Link>
         </div>
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 mt-12">
           <div data-aos="zoom-in-right" className="flex flex-col gap-2 w-full">
-            <Link className="flex items-center gap-2 text-lg lg:text-xl bg-[#e5f3f4] rounded-lg p-2">
-              <AiFillTool />
+            <Link className="flex items-center gap-2 text-lg lg:text-xl bg-[#e5f3f4] rounded-lg p-2 h-24">
+              <AiFillTool className="text-3xl" />
               Raqamlashtirish orqali ishlab chiqarish jarayonlarini
               avtomatlashtirish va optimallashtirish.
             </Link>
-            <Link className="flex items-center gap-2 text-lg lg:text-xl bg-[#e5f3f4] rounded-lg p-2">
-              <PiForkKnife />
+            <Link className="flex items-center gap-2 text-lg lg:text-xl bg-[#e5f3f4] rounded-lg p-2 h-24">
+              <PiForkKnife className="text-3xl" />
               Brending, SMM, va raqamli marketing orqali mijoz oqimini oshirish.
             </Link>
-            <Link className="flex items-center gap-2 text-lg lg:text-xl bg-[#e5f3f4] rounded-lg p-2">
-              <FaChalkboardTeacher />
+            <Link className="flex items-center gap-2 text-lg lg:text-xl bg-[#e5f3f4] rounded-lg p-2 h-24">
+              <FaChalkboardTeacher className="text-3xl" />
               Interaktiv platformalar, kontent yaratuvchiligi va foydalanuvchi
               tajribasi bilan boyitilgan yechimlar.
             </Link>
           </div>
           <div data-aos="zoom-in-left" className="flex flex-col gap-2 w-full">
-            <Link className="flex items-center gap-2 text-lg lg:text-xl bg-[#e5f3f4] rounded-lg p-2">
-              <FaUniversity />
+            <Link className="flex items-center gap-2 text-lg lg:text-xl bg-[#e5f3f4] rounded-lg p-2 h-24">
+              <FaUniversity className="text-3xl" />
               Mijozlar ishonchini oshiradigan xavfsiz va samarali tizimlar.
             </Link>
-            <Link className="flex items-center gap-2 text-lg lg:text-xl bg-[#e5f3f4] rounded-lg p-2">
-              <FaMapLocationDot />
+            <Link className="flex items-center gap-2 text-lg lg:text-xl bg-[#e5f3f4] rounded-lg p-2 h-24">
+              <FaMapLocationDot className="text-3xl" />
               Onlayn bron qilish tizimlari, reklama strategiyalari va brending
               yechimlari.
             </Link>
-            <Link className="flex items-center gap-2 text-lg lg:text-xl bg-[#e5f3f4] rounded-lg p-2">
-              <MdOutlineHealthAndSafety />
+            <Link className="flex items-center gap-2 text-lg lg:text-xl bg-[#e5f3f4] rounded-lg p-2 h-24">
+              <MdOutlineHealthAndSafety className="text-3xl" />
               CRM joriy etish, mijozlar bilan aloqani kuchaytiruvchi tizimlar va
               onlayn xizmatlar.
             </Link>
           </div>
         </div>
-        <div className="bg-gradient-to-r from-[#e5f3f4] via-[#539c9f] to-[#ffffff] rounded-md mt-16 p-4">
+        <div className="wave-gradient-bg animate-wave-gradient rounded-md mt-16 p-8">
           <div className="flex flex-col lg:flex-row justify-between mb-16 lg:mb-28 border-b-2 pb-7">
             <div data-aos="zoom-in-right">
-              <p className="bg-[#539c9f] inline-block p-1 font-swiss text-white">
+              <p className="bg-[#539c9f] inline-block p-2 font-swiss text-white">
                 Biz Haqimizda
               </p>
-              <h3 className="font-extrabold text-xl lg:text-3xl max-w-full lg:max-w-[600px] font-swiss mt-4">
+              <h3 className="font-extrabold text-xl lg:text-5xl max-w-full lg:max-w-[600px] font-swiss mt-4">
                 Milliy IT Center - bu yechim emas! Bu natija.
               </h3>
             </div>
             <div data-aos="zoom-in-left" className="mt-6 lg:mt-0">
-              <p className="font-swiss text-lg lg:text-xl pb-8 max-w-full lg:max-w-[500px]">
+              <p className="font-swiss text-lg lg:text-xl font-semibold pb-8 max-w-full lg:max-w-[500px]">
                 Milliy IT Center - 5 yillik tajribaga ega bo'lib hozirgacha 350
                 dan ortiq mijozlarni ishonchini qozongan va hozirda ulardan 324
                 ta loyiha muvaffaqiyatli yakunlangan va 26 ta loyiha bilan hali

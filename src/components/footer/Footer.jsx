@@ -98,7 +98,7 @@ function Footer() {
         <ul className="flex flex-col sm:flex-row items-center text-sm text-[#96989e] gap-2 sm:gap-4">
           <li className="hover:underline">Xizmat shartlari</li>
           <span className="hidden sm:inline">|</span>
-          <li className="hover:underline">MAxfiylik siyosati</li>
+          <li className="hover:underline">Maxfiylik siyosati</li>
           <span className="hidden sm:inline">|</span>
           <li className="hover:underline">Cookie siyosati</li>
         </ul>

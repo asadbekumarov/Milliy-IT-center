@@ -3,7 +3,26 @@ import Logo from "../../assets/headerImg/logo.png";
 import { NavLink } from "react-router-dom";
 import { MdPhoneInTalk } from "react-icons/md";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
+import { Dropdown } from "antd";
 import Aos from "aos";
+const items = [
+  {
+    key: "1",
+    label: <NavLink to="/about">Biz haqimizda</NavLink>,
+  },
+  {
+    key: "2",
+    label: <NavLink to="/mic">Bizning jamoa</NavLink>,
+  },
+  {
+    key: "3",
+    label: <NavLink to="/mic">Yangiliklar</NavLink>,
+  },
+  {
+    key: "4",
+    label: <NavLink to="/mic">Hamkorlar</NavLink>,
+  },
+];
 
 function Header() {
   useEffect(() => {
@@ -25,7 +44,11 @@ function Header() {
       <div className="max-w-[1460px] mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <NavLink to="/">
-            <img className="max-w-40 md:max-w-52" src={Logo} alt="Logo img" />
+            <img
+              className="max-w-[250px] md:max-w-52"
+              src={Logo}
+              alt="Logo img"
+            />
           </NavLink>
 
           <div className="lg:hidden">
@@ -43,8 +66,8 @@ function Header() {
                 to="/"
                 className={({ isActive }) =>
                   isActive
-                    ? "font-swiss text-[#3b7f82] underline"
-                    : "hover:underline font-swiss hover:text-[#3b7f82] transition duration-200"
+                    ? "font-swiss text-[#3b7f82] font-semibold underline"
+                    : "hover:underline font-swiss font-semibold hover:text-[#3b7f82] transition duration-200"
                 }
               >
                 Bosh Sahifa
@@ -55,32 +78,27 @@ function Header() {
                 to="/service"
                 className={({ isActive }) =>
                   isActive
-                    ? "font-swiss text-[#3b7f82] underline"
-                    : "hover:underline font-swiss hover:text-[#3b7f82] transition duration-200"
+                    ? "font-swiss text-[#3b7f82] font-semibold underline"
+                    : "hover:underline font-swiss font-semibold hover:text-[#3b7f82] transition duration-200"
                 }
               >
                 Xizmatlar
               </NavLink>
             </li>
             <li>
-              <NavLink
-                to="/dora"
-                className={({ isActive }) =>
-                  isActive
-                    ? "font-swiss text-[#3b7f82] underline"
-                    : "hover:underline font-swiss hover:text-[#3b7f82] transition duration-200"
-                }
-              >
-                Dora
-              </NavLink>
+              <Dropdown menu={{ items }} placement="bottom">
+                <button className="font-swiss font-semibold hover:underline hover:text-[#3b7f82] transition duration-200">
+                  MIC
+                </button>
+              </Dropdown>
             </li>
             <li>
               <NavLink
                 to="/Portfolio"
                 className={({ isActive }) =>
                   isActive
-                    ? "font-swiss text-[#3b7f82] underline"
-                    : "hover:underline font-swiss hover:text-[#3b7f82] transition duration-200"
+                    ? "font-swiss text-[#3b7f82] font-semibold underline"
+                    : "hover:underline font-swiss font-semibold hover:text-[#3b7f82] transition duration-200"
                 }
               >
                 Portfolio
@@ -91,8 +109,8 @@ function Header() {
                 to="/blog"
                 className={({ isActive }) =>
                   isActive
-                    ? "font-swiss text-[#3b7f82] underline"
-                    : "hover:underline font-swiss hover:text-[#3b7f82] transition duration-200"
+                    ? "font-swiss text-[#3b7f82] font-semibold underline"
+                    : "hover:underline font-swiss font-semibold hover:text-[#3b7f82] transition duration-200"
                 }
               >
                 Blog
@@ -103,8 +121,8 @@ function Header() {
                 to="/communication"
                 className={({ isActive }) =>
                   isActive
-                    ? "font-swiss text-[#3b7f82] underline"
-                    : "hover:underline font-swiss hover:text-[#3b7f82] transition duration-200"
+                    ? "font-swiss text-[#3b7f82] font-semibold underline"
+                    : "hover:underline font-swiss font-semibold hover:text-[#3b7f82] transition duration-200"
                 }
               >
                 Aloqa
@@ -122,21 +140,22 @@ function Header() {
             <span className="flex gap-1 bg-[#e5f3f4] p-1 rounded-full">
               <button
                 type="button"
-                className={langClass("En")}
+                className={`${langClass("En")} font-semibold`}
                 onClick={() => setActiveLang("En")}
               >
                 En
               </button>
+
               <button
                 type="button"
-                className={langClass("Uz")}
+                className={`${langClass("Uz")} font-semibold`}
                 onClick={() => setActiveLang("Uz")}
               >
                 Uz
               </button>
               <button
                 type="button"
-                className={langClass("Ru")}
+                className={`${langClass("Ru")} font-semibold`}
                 onClick={() => setActiveLang("Ru")}
               >
                 Ru
@@ -147,8 +166,10 @@ function Header() {
               type="button"
               className="py-3 font-swiss px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-[#539c9f] text-white hover:bg-[#417274]"
             >
-              <MdPhoneInTalk />
-              <span className="hidden sm:inline">(91) 123 45 56</span>
+              <MdPhoneInTalk className="text-xl" />
+              <span className="hidden font-semibold sm:inline">
+                (91) 123 45 56
+              </span>
             </button>
           </div>
         </div>

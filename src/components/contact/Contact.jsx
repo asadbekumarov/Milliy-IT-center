@@ -1,5 +1,5 @@
 import Aos from "aos";
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import { BsCheckLg } from "react-icons/bs";
 import { FaArrowsRotate } from "react-icons/fa6";
 

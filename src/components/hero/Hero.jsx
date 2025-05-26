@@ -79,6 +79,7 @@ function Hero() {
               Bog'lanish
             </button>
           </div>
+          <div></div>
         </div>
 
         <div className="max-w-[550px] text-start">

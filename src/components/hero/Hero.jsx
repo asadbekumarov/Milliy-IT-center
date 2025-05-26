@@ -81,12 +81,9 @@ function Hero() {
           </div>
         </div>
 
-        <div
-          className="max-w-[550px] text-start"
-          data-aos="zoom-in-left"
-        >
+        <div className="max-w-[550px] text-start" data-aos="zoom-in-left">
           <Slider {...settings} key={sliderKey}>
-            <img src={Brand} alt="Brand" />
+            <img className="w-full h-auto" src={Brand} alt="Brand" />
             <img src={Crm} alt="Crm" />
             <img src={Grafik} alt="Grafik" />
             <img src={Logotip} alt="Logotip" />

@@ -1,16 +1,16 @@
 import Aos from "aos";
 import { useEffect, useState } from "react";
 import "aos/dist/aos.css";
-import Brand from "./../../assets/heroimg/brandingImg.png";
-import Crm from "./../../assets/heroimg/crmImg.png";
-import Grafik from "./../../assets/heroimg/grafikDizaynImg.png";
-import Logotip from "./../../assets/heroimg/logotipImg.png";
-import Marketing from "./../../assets/heroimg/marketingImg.png";
-import Mobil from "./../../assets/heroimg/mobilIlovaImg.png";
-import Seo from "./../../assets/heroimg/seoOptimizatsiyaImg.png";
-import Smm from "./../../assets/heroimg/smmImg.png";
-import Veb from "./../../assets/heroimg/vebSaytImg.png";
-// import Nev from "../../assets/news/persons.jpg";
+import Brand from "../../../public/heroimg/brandingImg.png";
+import Crm from "./../../../public/heroimg/crmImg.png";
+import Grafik from "./../../../public/heroimg/grafikDizaynImg.png";
+import Logotip from "./../../../public/heroimg/logotipImg.png";
+import Marketing from "./../../../public/heroimg/marketingImg.png";
+import Mobil from "./../../../public/heroimg/mobilIlovaImg.png";
+import Seo from "./../../../public/heroimg/seoOptimizatsiyaImg.png";
+import Smm from "./../../../public/heroimg/smmImg.png";
+import Veb from "./../../../public/heroimg/vebSaytImg.png";
+// import Nev from "../../../public/news/persons.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -93,6 +93,7 @@ function Hero() {
             <img src={Seo} alt="Seo" />
             <img src={Smm} alt="Smm" />
             <img src={Veb} alt="Veb" />
+            <img className="w-full h-auto" src={Brand} alt="Brand" />
           </Slider>
           {/* <img src={Nev} alt="Veb" /> */}
         </div>

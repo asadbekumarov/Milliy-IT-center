@@ -3,21 +3,28 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Swiss';
-    src: url('./fonts/roboto/Roboto-Regular.ttf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Swiss';
+  src: url('./fonts/roboto/Roboto-Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
+
 .wave-gradient-bg {
-  background-image: linear-gradient(
-    -45deg,
-    #e5f3f4,
-    #539c9f,
-    #ffffff,
-    #539c9f,
-    #e5f3f4
-  );
+  background-image: linear-gradient(-45deg,
+      #e5f3f4,
+      #539c9f,
+      #ffffff,
+      #539c9f,
+      #e5f3f4);
   background-size: 400% 400%;
 }
 
+@layer components {
+  .custom-dropdown .ant-dropdown-menu {
+    @apply text-2xl;
+  }
 
+  .custom-dropdown .ant-dropdown-menu-item {
+    @apply text-3xl font-medium;
+  }
+}

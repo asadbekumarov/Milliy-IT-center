@@ -14,33 +14,37 @@ import Blog from "./pages/blogPage/Blog";
 import ScrollToTopButton from "./components/scrollToTopButton/ScrollToTopButton";
 import ScrollToTop from "./components/scrollToTopButton/ScrollToTop";
 import WeAbout from "./pages/weAbout/weAbout";
+import AboutPage from "./pages/aboutPage/AboutPage";
+import OurTeam from "./pages/ourTeam/OurTeam";
+import News from "./pages/news/News";
+import Partners from "./pages/partners/Partners";
 function App() {
-  const [showModal, setShowModal] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
-  useEffect(() => {
-    if (!submitted) {
-      const timer = setTimeout(() => {
-        setShowModal(true);
-        document.body.style.overflow = "hidden";
-      }, 3000);
+  // const [showModal, setShowModal] = useState(false);
+  // const [submitted, setSubmitted] = useState(false);
+  // useEffect(() => {
+  //   if (!submitted) {
+  //     const timer = setTimeout(() => {
+  //       setShowModal(true);
+  //       document.body.style.overflow = "hidden";
+  //     }, 3000);
 
-      return () => {
-        clearTimeout(timer);
-      };
-    }
-  }, [submitted]);
+  //     return () => {
+  //       clearTimeout(timer);
+  //     };
+  //   }
+  // }, [submitted]);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setShowModal(false);
-    setSubmitted(true);
-    document.body.style.overflow = "auto";
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   setShowModal(false);
+  //   setSubmitted(true);
+  //   document.body.style.overflow = "auto";
+  // };
   return (
     <>
       <Header />
       <ScrollToTop />
-      {showModal && (
+      {/* {showModal && (
         <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-lg w-96">
             <h2 className="text-xl text-center font-semibold mb-4">
@@ -71,7 +75,7 @@ function App() {
             </form>
           </div>
         </div>
-      )}
+      )} */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="service" element={<ServicesPage />} />
@@ -80,6 +84,11 @@ function App() {
         <Route path="portfolio" element={<Portfolio />} />
         <Route path="blog" element={<Blog />} />
         <Route path="price" element={<Price />} />
+        <Route path="aboutPage" element={<AboutPage />} />
+        <Route path="ourTeam" element={<OurTeam />} />
+        <Route path="news" element={<News />} />
+        <Route path="partners" element={<Partners />} />
+
         <Route path="*" element={<Notfound />} />
       </Routes>
       <ScrollToTopButton />

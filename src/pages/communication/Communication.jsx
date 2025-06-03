@@ -37,7 +37,7 @@ function Communication() {
               Sizda savollar bormi yoki bizning xizmatlarimiz haqida qo'shimcha
               ma'lumot kerakmi? Biz bilan bog'lanish uchun quyidagi kontakt
               ma'lumotlaridan foydalaning yoki onlayn murojaat shaklini
-              to'ldiring. DORA kompaniyasi siz bilan bog'lanishga tayyor.
+              to'ldiring. MIC kompaniyasi siz bilan bog'lanishga tayyor.
             </p>
             <div className="flex flex-col space-y-3">
               <div className="flex items-center space-x-3">
@@ -55,7 +55,7 @@ function Communication() {
                   className="bg-[#539c9f] p-2 rounded-full text-white text-2xl sm:text-3xl"
                 />
                 <p data-aos="zoom-out-right" className="text-sm sm:text-base">
-                  info@dora.uz
+                  info@MIC.uz
                 </p>
               </div>
               <div className="flex items-center space-x-3">
@@ -174,7 +174,7 @@ function Communication() {
                 className="p-4 rounded-xl w-full shadow-lg text-black bg-white"
               >
                 <h4 className="font-semibold text-xl sm:text-2xl font-swiss">
-                  DORA® System
+                  MIC System
                 </h4>
                 <div className="mt-2">
                   <p className="text-sm sm:text-lg text-[#6c6d77]">Address:</p>

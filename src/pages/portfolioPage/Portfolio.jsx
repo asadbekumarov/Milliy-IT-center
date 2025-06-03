@@ -64,10 +64,10 @@ function Portfolio() {
           data-aos="zoom-out-right"
           className="font-semibold text-base sm:text-lg lg:text-xl text-[#646575] font-swiss mt-4 sm:mt-6"
         >
-          DORA kompaniyasi tomonidan amalga oshirilgan muvaffaqiyatli loyihalar
+          MIC kompaniyasi tomonidan amalga oshirilgan muvaffaqiyatli loyihalar
           bilan tanishing. Bizning mijozlarimiz uchun yaratgan veb-saytlar,
           marketing kampaniyalari va texnologik yechimlarimiz haqida batafsil
-          ma'lumot oling. DORA bilan birgalikda muvaffaqiyatga erishgan
+          ma'lumot oling. MIC bilan birgalikda muvaffaqiyatga erishgan
           loyihalarimizni ko'ring.
         </p>
 

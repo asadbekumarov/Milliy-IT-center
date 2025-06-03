@@ -66,7 +66,7 @@ function ServicesPage() {
           data-aos="zoom-out-right"
           className="font-semibold text-base sm:text-lg lg:text-xl text-[#646575] font-swiss mt-4 sm:mt-6"
         >
-          DORA® kompaniyasi keng qamrovli xizmatlarni taqdim etadi...
+          MIC kompaniyasi keng qamrovli xizmatlarni taqdim etadi...
         </p>
 
         <h4
@@ -109,7 +109,6 @@ function ServicesPage() {
           ))}
         </div>
 
-     
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-12 sm:mt-16">
           {filteredServices.map((item) =>
             item.services

@@ -10,7 +10,7 @@ import Mobil from "./../../assets/heroimg/mobilIlovaImg.png";
 import Seo from "./../../assets/heroimg/seoOptimizatsiyaImg.png";
 import Smm from "./../../assets/heroimg/smmImg.png";
 import Veb from "./../../assets/heroimg/vebSaytImg.png";
-import Nev from "../../assets/news/persons.jpg";
+// import Nev from "../../assets/news/persons.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -94,7 +94,7 @@ function Hero() {
             <img src={Smm} alt="Smm" />
             <img src={Veb} alt="Veb" />
           </Slider>
-          <img src={Nev} alt="Veb" />
+          {/* <img src={Nev} alt="Veb" /> */}
         </div>
       </div>
     </div>

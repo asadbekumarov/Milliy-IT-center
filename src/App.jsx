@@ -19,63 +19,10 @@ import OurTeam from "./pages/ourTeam/OurTeam";
 import News from "./pages/news/News";
 import Partners from "./pages/partners/Partners";
 function App() {
-  // const [showModal, setShowModal] = useState(false);
-  // const [submitted, setSubmitted] = useState(false);
-  // useEffect(() => {
-  //   if (!submitted) {
-  //     const timer = setTimeout(() => {
-  //       setShowModal(true);
-  //       document.body.style.overflow = "hidden";
-  //     }, 3000);
-
-  //     return () => {
-  //       clearTimeout(timer);
-  //     };
-  //   }
-  // }, [submitted]);
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   setShowModal(false);
-  //   setSubmitted(true);
-  //   document.body.style.overflow = "auto";
-  // };
   return (
     <>
       <Header />
       <ScrollToTop />
-      {/* {showModal && (
-        <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg w-96">
-            <h2 className="text-xl text-center font-semibold mb-4">
-              Ro'yhatdan o'ting
-            </h2>
-            <form onSubmit={handleSubmit}>
-              <input
-                type="text"
-                placeholder="Ism"
-                className="w-full p-3 mb-4 border outline-none rounded-md focus:ring-2 focus:ring-[#539c9f]"
-              />
-              <input
-                type="text"
-                placeholder="Familiya"
-                className="w-full p-3 mb-4 border outline-none rounded-md focus:ring-2 focus:ring-[#539c9f]"
-              />
-              <input
-                type="tel"
-                placeholder="Telefon raqami"
-                className="w-full p-3 mb-4 border outline-none rounded-md focus:ring-2 focus:ring-[#539c9f]"
-              />
-              <button
-                type="submit"
-                className="w-full py-3 bg-[#539c9f] text-white rounded-md hover:bg-[#3f7a7b] transition duration-300"
-              >
-                Kirish
-              </button>
-            </form>
-          </div>
-        </div>
-      )} */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="service" element={<ServicesPage />} />

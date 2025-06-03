@@ -1,15 +1,15 @@
 import Aos from "aos";
 import { useEffect, useState } from "react";
 import "aos/dist/aos.css";
-import Brand from "../../../public/heroimg/brandingImg.png";
-import Crm from "./../../../public/heroimg/crmImg.png";
-import Grafik from "./../../../public/heroimg/grafikDizaynImg.png";
-import Logotip from "./../../../public/heroimg/logotipImg.png";
-import Marketing from "./../../../public/heroimg/marketingImg.png";
-import Mobil from "./../../../public/heroimg/mobilIlovaImg.png";
-import Seo from "./../../../public/heroimg/seoOptimizatsiyaImg.png";
-import Smm from "./../../../public/heroimg/smmImg.png";
-import Veb from "./../../../public/heroimg/vebSaytImg.png";
+// import Brand from "../../../public/heroimg/brandingImg.png";
+// import Crm from "./../../../public/heroimg/crmImg.png";
+// import Grafik from "./../../../public/heroimg/grafikDizaynImg.png";
+// import Logotip from "./../../../public/heroimg/logotipImg.png";
+// import Marketing from "./../../../public/heroimg/marketingImg.png";
+// import Mobil from "./../../../public/heroimg/mobilIlovaImg.png";
+// import Seo from "./../../../public/heroimg/seoOptimizatsiyaImg.png";
+// import Smm from "./../../../public/heroimg/smmImg.png";
+// import Veb from "./../../../public/heroimg/vebSaytImg.png";
 // import Nev from "../../../public/news/persons.jpg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -84,16 +84,15 @@ function Hero() {
 
         <div className="max-w-[550px] text-start" data-aos="zoom-in-left">
           <Slider {...settings} key={sliderKey}>
-            <img className="w-full h-auto" src={Brand} alt="Brand" />
-            <img src={Crm} alt="Crm" />
-            <img src={Grafik} alt="Grafik" />
-            <img src={Logotip} alt="Logotip" />
-            <img src={Marketing} alt="Marketing" />
-            <img src={Mobil} alt="Mobil" />
-            <img src={Seo} alt="Seo" />
-            <img src={Smm} alt="Smm" />
-            <img src={Veb} alt="Veb" />
-            <img className="w-full h-auto" src={Brand} alt="Brand" />
+            <img src="/heroimg/brandingImg.png" alt="Brand" />
+            <img src="/heroimg/crmImg.png" alt="Crm" />
+            <img src="/heroimg/grafikDizaynImg.png" alt="Grafik" />
+            <img src="/heroimg/logotipImg.png" alt="Logotip" />
+            <img src="/heroimg/marketingImg.png" alt="Marketing" />
+            <img src="/heroimg/mobilIlovaImg.png" alt="Mobil" />
+            <img src="/heroimg/seoOptimizatsiyaImg.png" alt="Seo" />
+            <img src="/heroimg/smmImg.png" alt="Smm" />
+            <img src="/heroimg/vebSaytImg.png" alt="Veb" />
           </Slider>
           {/* <img src={Nev} alt="Veb" /> */}
         </div>

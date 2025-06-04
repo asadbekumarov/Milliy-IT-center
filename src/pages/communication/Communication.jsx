@@ -46,7 +46,7 @@ function Communication() {
                   className="bg-[#539c9f] p-2 rounded-full text-white text-2xl sm:text-3xl"
                 />
                 <p data-aos="zoom-out-right" className="text-sm sm:text-base">
-                  +998935125324
+                  +998952625578
                 </p>
               </div>
               <div className="flex items-center space-x-3">
@@ -179,7 +179,7 @@ function Communication() {
                 <div className="mt-2">
                   <p className="text-sm sm:text-lg text-[#6c6d77]">Address:</p>
                   <p className="font-medium text-sm sm:text-lg">
-                    Chilanzar street 2/2
+                    Olmazor axborot-kutubxona markazi Qoraqamish 1/2 18a Uy
                   </p>
                 </div>
                 <div className="mt-1">
@@ -187,7 +187,7 @@ function Communication() {
                     Phone Number:
                   </p>
                   <p className="font-medium text-sm sm:text-lg">
-                    +998935135324
+                    +998952625578
                   </p>
                 </div>
               </div>

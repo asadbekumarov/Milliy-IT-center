@@ -540,7 +540,7 @@ function Header() {
             >
               <MdPhoneInTalk className="text-xl" />
               <span className="hidden font-semibold sm:inline">
-                (91) 123 45 56
+                (95) 262 55 78
               </span>
             </button>
           </div>

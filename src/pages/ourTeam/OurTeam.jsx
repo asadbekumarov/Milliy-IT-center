@@ -48,7 +48,7 @@ function OurTeam() {
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
                     <h4 className="text-white text-xl font-semibold scale-95 group-hover:scale-100 transition-transform duration-500">
-                      Mexriddin – PHP Developer
+                      Mexriddin – Software Engineer
                     </h4>
                   </div>
                 </div>
@@ -61,7 +61,7 @@ function OurTeam() {
       before:content-[''] before:absolute before:left-0 before:top-0 before:h-[2px] before:bg-[#539c9f] 
       before:w-0 group-hover:before:w-full before:transition-all before:duration-500"
                     >
-                      PHP Developer
+                      Software Engineer
                     </span>
                   </h4>
                   <Link
@@ -92,7 +92,7 @@ function OurTeam() {
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
                     <h4 className="text-white text-xl font-semibold scale-95 group-hover:scale-100 transition-transform duration-500">
-                      Mexriddin – PHP Developer
+                      Mexriddin – Software Engineer
                     </h4>
                   </div>
                 </div>
@@ -105,7 +105,7 @@ function OurTeam() {
       before:content-[''] before:absolute before:left-0 before:top-0 before:h-[2px] before:bg-[#539c9f] 
       before:w-0 group-hover:before:w-full before:transition-all before:duration-500"
                     >
-                      PHP Developer
+                      Software Engineer
                     </span>
                   </h4>
                   <Link
@@ -135,7 +135,7 @@ function OurTeam() {
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
                     <h4 className="text-white text-xl font-semibold scale-95 group-hover:scale-100 transition-transform duration-500">
-                      Mexriddin – PHP Developer
+                      Mexriddin – Software Engineer
                     </h4>
                   </div>
                 </div>
@@ -148,7 +148,7 @@ function OurTeam() {
       before:content-[''] before:absolute before:left-0 before:top-0 before:h-[2px] before:bg-[#539c9f] 
       before:w-0 group-hover:before:w-full before:transition-all before:duration-500"
                     >
-                      PHP Developer
+                      Software Engineer
                     </span>
                   </h4>
                   <Link
@@ -178,7 +178,7 @@ function OurTeam() {
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
                     <h4 className="text-white text-xl font-semibold scale-95 group-hover:scale-100 transition-transform duration-500">
-                      Mexriddin – PHP Developer
+                      Mexriddin – Software Engineer
                     </h4>
                   </div>
                 </div>
@@ -191,7 +191,7 @@ function OurTeam() {
       before:content-[''] before:absolute before:left-0 before:top-0 before:h-[2px] before:bg-[#539c9f] 
       before:w-0 group-hover:before:w-full before:transition-all before:duration-500"
                     >
-                      PHP Developer
+                      Software Engineer
                     </span>
                   </h4>
                   <Link

@@ -343,7 +343,7 @@ const items = [
   {
     key: "1",
     label: (
-      <NavLink className={{}} to="/AboutPage">
+      <NavLink className={{}} to="/aboutPage">
         Biz haqimizda
       </NavLink>
     ),

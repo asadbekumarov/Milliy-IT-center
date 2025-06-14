@@ -12,3 +12,4 @@ export default defineConfig({
   base: "/", // Bu muhim qadam!
   plugins: [react()],
 });
+

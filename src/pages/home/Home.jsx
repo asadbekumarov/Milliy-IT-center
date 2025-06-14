@@ -6,7 +6,7 @@ import Portfolio from "../../components/portfolio/Portfolio";
 
 const Home = () => {
   return (
-    <div className="w-full max-w-[1460px] mx-auto px-4">
+    <div className="mx-auto">
       <Hero />
       <Services />
       <AboutUs />

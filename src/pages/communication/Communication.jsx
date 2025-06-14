@@ -64,7 +64,8 @@ function Communication() {
                   className="bg-[#539c9f] p-2 rounded-full text-white text-2xl sm:text-3xl"
                 />
                 <p data-aos="zoom-out-right" className="text-sm sm:text-base">
-                  O‘zbekiston, Toshkent shahri, Chilonzor 2/2
+                  Toshkent, Olmazor tumani, Qoraqamish 1/2, 18a-uy,
+                  axborot-kutubxona markazi
                 </p>
               </div>
             </div>
@@ -134,7 +135,7 @@ function Communication() {
                   <p className="text-sm py-1">Tasdiqlash kodini kiriting</p>
                   <input
                     className="border px-3 py-2 rounded-md w-full outline-none focus:ring-2 focus:ring-[#539c9f]"
-                    type="text"
+                    type="text"q
                   />
                 </div>
                 <div className="flex gap-2 items-end">

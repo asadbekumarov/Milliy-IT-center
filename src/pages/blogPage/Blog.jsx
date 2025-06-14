@@ -13,11 +13,11 @@ function Blog() {
     Aos.init({ duration: 1000, once: true });
 
     const servicesRequest = axios.get(
-      "https://36d0-188-113-216-91.ngrok-free.app/api/blog",
+      "http://api.milliyitcenter.uz/api/blog",
       { headers: { "ngrok-skip-browser-warning": "true" } }
     );
     const categoriesRequest = axios.get(
-      "https://36d0-188-113-216-91.ngrok-free.app/api/blog-category",
+      "http://api.milliyitcenter.uz/api/blog-category",
       { headers: { "ngrok-skip-browser-warning": "true" } }
     );
 
@@ -39,8 +39,8 @@ function Blog() {
     activeCategoryId === "all"
       ? data.services
       : data.services.filter(
-          (service) => String(service.blog_category_id) === activeCategoryId
-        );
+        (service) => String(service.blog_category_id) === activeCategoryId
+      );
 
   if (loading) return <p className="text-center mt-20">Yuklanmoqda...</p>;
   if (error)
@@ -81,10 +81,9 @@ function Blog() {
             className={`font-normal text-sm sm:text-base lg:text-xl py-2 px-3 sm:px-4 rounded-full 
               transition-all duration-300 ease-in-out 
               hover:bg-blue-600 hover:text-white 
-              ${
-                activeCategoryId === "all"
-                  ? "bg-blue-600 text-white"
-                  : "bg-[#f8f9fa]"
+              ${activeCategoryId === "all"
+                ? "bg-blue-600 text-white"
+                : "bg-[#f8f9fa]"
               }`}
           >
             Barchasini ko‘rish
@@ -97,11 +96,10 @@ function Blog() {
               className={`font-normal text-sm sm:text-base lg:text-xl py-2 px-3 sm:px-4 rounded-full 
               transition-all duration-300 ease-in-out 
               hover:bg-blue-600 hover:text-white 
-              ${
-                activeCategoryId === category.id.toString()
+              ${activeCategoryId === category.id.toString()
                   ? "bg-blue-600 text-white"
                   : "bg-[#f8f9fa]"
-              }`}
+                }`}
             >
               {category.name}
             </button>

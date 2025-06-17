@@ -16,11 +16,11 @@ function ServicesPage() {
 
     const servicesRequest = axios.get(
       "http://api.milliyitcenter.uz/api/services",
-      { headers: { "ngrok-skip-browser-warning": "true" } }
+      // { headers: { "ngrok-skip-browser-warning": "true" } }
     );
     const categoriesRequest = axios.get(
       "http://api.milliyitcenter.uz/api/categories",
-      { headers: { "ngrok-skip-browser-warning": "true" } }
+      // { headers: { "ngrok-skip-browser-warning": "true" } }
     );
 
     Promise.all([servicesRequest, categoriesRequest])

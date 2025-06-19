@@ -13,7 +13,7 @@ function ServicesPage() {
     Aos.init({ duration: 1000, once: true });
 
     axios
-      .get("http://api.milliyitcenter.uz/api/categories")
+      .get("https://api.milliyitcenter.uz/api/categories")
       .then((res) => {
         const categories = res.data;
         const services = categories.flatMap((category) =>

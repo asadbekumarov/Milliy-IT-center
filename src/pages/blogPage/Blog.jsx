@@ -13,11 +13,11 @@ function Blog() {
     Aos.init({ duration: 1000, once: true });
 
     const servicesRequest = axios.get(
-      "http://api.milliyitcenter.uz/api/blog",
+      "https://api.milliyitcenter.uz/api/blog",
       { headers: { "ngrok-skip-browser-warning": "true" } }
     );
     const categoriesRequest = axios.get(
-      "http://api.milliyitcenter.uz/api/blog-category",
+      "https://api.milliyitcenter.uz/api/blog-category",
       { headers: { "ngrok-skip-browser-warning": "true" } }
     );
 

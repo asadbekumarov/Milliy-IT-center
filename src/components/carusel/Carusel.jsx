@@ -9,7 +9,7 @@ const Carousel = () => {
 
     useEffect(() => {
         axios
-            .get("http://api.milliyitcenter.uz/api/companies", {
+            .get("https://api.milliyitcenter.uz/api/companies", {
                 headers: {
                     "ngrok-skip-browser-warning": "true",
                 },

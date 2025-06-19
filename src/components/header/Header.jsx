@@ -212,7 +212,7 @@ function Header() {
           </div>
         </div>
 
-        {menuOpen && (
+        {/* {menuOpen && (
           <div
             key={menuOpen ? "menu-open" : "menu-closed"}
             data-aos="fade-down"
@@ -310,7 +310,142 @@ function Header() {
               (91) 123 45 56
             </button>
           </div>
+        )} */}
+        {menuOpen && (
+          <div
+            key={menuOpen ? "menu-open" : "menu-closed"}
+            data-aos="fade-down"
+            data-aos-duration="500"
+            className="lg:hidden mt-4 space-y-4 bg-white/95 backdrop-blur rounded-lg p-4 shadow-lg absolute top-full left-0 right-0 z-50"
+          >
+            <ul className="flex flex-col gap-2">
+              <li>
+                <NavLink
+                  to="/"
+                  className="block font-swiss py-2 px-4 bg-[#f1f1f1] rounded hover:bg-[#539c9f] hover:text-white transition"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Bosh Sahifa
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/service"
+                  className="block font-swiss py-2 px-4 bg-[#f1f1f1] rounded hover:bg-[#539c9f] hover:text-white transition"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Xizmatlar
+                </NavLink>
+              </li>
+
+              {/* MIC dropdown menyusi (mobil uchun) */}
+              <li>
+                <ul className="space-y-2">
+                  <li>
+                    <NavLink
+                      to="/aboutPage"
+                      className="block font-swiss py-2 px-4 bg-[#f1f1f1] rounded hover:bg-[#539c9f] hover:text-white transition"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Biz haqimizda
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/ourTeam"
+                      className="block font-swiss py-2 px-4 bg-[#f1f1f1] rounded hover:bg-[#539c9f] hover:text-white transition"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Bizning jamoa
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/news"
+                      className="block font-swiss py-2 px-4 bg-[#f1f1f1] rounded hover:bg-[#539c9f] hover:text-white transition"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Yangiliklar
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink
+                      to="/partners"
+                      className="block font-swiss py-2 px-4 bg-[#f1f1f1] rounded hover:bg-[#539c9f] hover:text-white transition"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Hamkorlar
+                    </NavLink>
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <NavLink
+                  to="/portfolio"
+                  className="block font-swiss py-2 px-4 bg-[#f1f1f1] rounded hover:bg-[#539c9f] hover:text-white transition"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Portfolio
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/blog"
+                  className="block font-swiss py-2 px-4 bg-[#f1f1f1] rounded hover:bg-[#539c9f] hover:text-white transition"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Blog
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/communication"
+                  className="block font-swiss py-2 px-4 bg-[#f1f1f1] rounded hover:bg-[#539c9f] hover:text-white transition"
+                  onClick={() => setMenuOpen(false)}
+                >
+                  Aloqa
+                </NavLink>
+              </li>
+            </ul>
+
+            <input
+              placeholder="Search..."
+              className="w-full border font-swiss py-2 px-3 outline-none rounded-md shadow-sm focus:ring-2 focus:ring-[#539c9f]"
+              type="search"
+            />
+
+            <div className="flex justify-center gap-2">
+              <button
+                type="button"
+                className="py-2 px-3 font-swiss text-sm font-medium rounded-full bg-[#e5f3f4] text-[#539c9f] hover:bg-[#539c9f] hover:text-white transition"
+              >
+                En
+              </button>
+              <button
+                type="button"
+                className="py-2 px-3 font-swiss text-sm font-medium rounded-full bg-[#e5f3f4] text-[#539c9f] hover:bg-[#539c9f] hover:text-white transition"
+              >
+                Uz
+              </button>
+              <button
+                type="button"
+                className="py-2 px-3 font-swiss text-sm font-medium rounded-full bg-[#e5f3f4] text-[#539c9f] hover:bg-[#539c9f] hover:text-white transition"
+              >
+                Ru
+              </button>
+            </div>
+
+            <button
+              type="button"
+              className="w-full py-3 font-swiss px-4 inline-flex items-center justify-center gap-x-2 text-sm font-medium rounded-lg bg-[#539c9f] text-white hover:bg-[#417274]"
+            >
+              <MdPhoneInTalk />
+              (91) 123 45 56
+            </button>
+          </div>
         )}
+
       </div>
     </div>
   );

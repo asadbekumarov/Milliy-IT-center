@@ -1,69 +1,13 @@
-import { useEffect, useState } from "react";
 import Icon from "../../assets/icon.png";
-import Aos from "aos";
-import axios from "axios";
+
 function Portfolio() {
-  const [data, setData] = useState({ services: [], categories: [] });
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [activeCategoryId, setActiveCategoryId] = useState("all");
-
-  useEffect(() => {
-    Aos.init({ duration: 1000, once: true });
-
-    const servicesRequest = axios.get(
-      "https://8a61-188-113-199-145.ngrok-free.app/api/services",
-      { headers: { "ngrok-skip-browser-warning": "true" } }
-    );
-    const categoriesRequest = axios.get(
-      "https://8a61-188-113-199-145.ngrok-free.app/api/categories",
-      { headers: { "ngrok-skip-browser-warning": "true" } }
-    );
-
-    Promise.all([servicesRequest, categoriesRequest])
-      .then(([servicesRes, categoriesRes]) => {
-        console.log("Services:", servicesRes.data);
-        console.log("Categories:", categoriesRes.data);
-        setData({
-          services: servicesRes.data,
-          categories: categoriesRes.data,
-        });
-        setLoading(false);
-      })
-      .catch((err) => {
-        setError(err);
-        setLoading(false);
-      });
-  }, []);
-
-  const filteredServices =
-    activeCategoryId === "all"
-      ? data.services
-      : data.services.filter((item) =>
-          item.services.some(
-            (service) => service.category_id === activeCategoryId
-          )
-        );
-
-  if (loading) return <p className="text-center mt-20">Yuklanmoqda...</p>;
-  if (error)
-    return (
-      <p className="text-center text-red-500 mt-20">Xatolik: {error.message}</p>
-    );
-
   return (
     <div>
       <div className="max-w-[1460px] mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <h2
-          data-aos="zoom-out-right"
-          className="font-semibold text-4xl sm:text-5xl lg:text-6xl font-swiss mt-12 sm:mt-16 lg:mt-24"
-        >
+        <h2 className="font-semibold text-4xl sm:text-5xl lg:text-6xl font-swiss mt-12 sm:mt-16 lg:mt-24">
           Portfolio
         </h2>
-        <p
-          data-aos="zoom-out-right"
-          className="font-semibold text-base sm:text-lg lg:text-xl text-[#646575] font-swiss mt-4 sm:mt-6"
-        >
+        <p className="font-semibold text-base sm:text-lg lg:text-xl text-[#646575] font-swiss mt-4 sm:mt-6">
           MIC kompaniyasi tomonidan amalga oshirilgan muvaffaqiyatli loyihalar
           bilan tanishing. Bizning mijozlarimiz uchun yaratgan veb-saytlar,
           marketing kampaniyalari va texnologik yechimlarimiz haqida batafsil
@@ -71,70 +15,36 @@ function Portfolio() {
           loyihalarimizni ko'ring.
         </p>
 
-        <h4
-          data-aos="zoom-out-right"
-          className="font-semibold text-xl sm:text-2xl lg:text-3xl mt-8 sm:mt-10 font-swiss"
-        >
+        <h4 className="font-semibold text-xl sm:text-2xl lg:text-3xl mt-8 sm:mt-10 font-swiss">
           Filtr
         </h4>
 
         <div className="flex flex-col sm:flex-row flex-wrap gap-x-2 sm:gap-x-3 gap-y-2 mt-4 sm:mt-5">
-          <button
-            onClick={() => setActiveCategoryId("all")}
-            className={`font-normal text-sm sm:text-base lg:text-xl py-2 px-3 sm:px-4 rounded-full 
-                transition-all duration-300 ease-in-out 
-                hover:bg-blue-600 hover:text-white 
-                ${
-                  activeCategoryId === "all"
-                    ? "bg-blue-600 text-white"
-                    : "bg-[#f8f9fa]"
-                }`}
-          >
-            Barchasi ko‘rish
+          <button className="font-normal text-sm sm:text-base lg:text-xl py-2 px-3 sm:px-4 rounded-full bg-blue-600 text-white">
+            Barchasini ko‘rish
           </button>
-
-          {data.categories.map((category) => (
-            <button
-              key={category.id}
-              onClick={() => setActiveCategoryId(category.id)}
-              className={`font-normal text-sm sm:text-base lg:text-xl py-2 px-3 sm:px-4 rounded-full 
-                  transition-all duration-300 ease-in-out 
-                  hover:bg-blue-600 hover:text-white 
-                  ${
-                    activeCategoryId === category.id
-                      ? "bg-blue-600 text-white"
-                      : "bg-[#f8f9fa]"
-                  }`}
-            >
-              {category.name}
-            </button>
-          ))}
+          <button className="font-normal text-sm sm:text-base lg:text-xl py-2 px-3 sm:px-4 rounded-full bg-[#f8f9fa] hover:bg-blue-600 hover:text-white">
+            Marketing
+          </button>
+          <button className="font-normal text-sm sm:text-base lg:text-xl py-2 px-3 sm:px-4 rounded-full bg-[#f8f9fa] hover:bg-blue-600 hover:text-white">
+            Brending
+          </button>
+          <button className="font-normal text-sm sm:text-base lg:text-xl py-2 px-3 sm:px-4 rounded-full bg-[#f8f9fa] hover:bg-blue-600 hover:text-white">
+            Dasturlash
+          </button>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-12 sm:mt-16">
-          {filteredServices.map((item) =>
-            item.services
-              .filter(
-                (service) =>
-                  activeCategoryId === "all" ||
-                  service.category_id === activeCategoryId
-              )
-              .map((service) => (
-                <div
-                  key={service.id}
-                  data-aos="zoom-out-right"
-                  className="w-full border border-[#c4c8cb] p-6 sm:p-8 rounded-2xl transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl"
-                >
-                  <img className="w-12 sm:w-14" src={Icon} alt="" />
-                  <h3 className="font-semibold text-xl sm:text-2xl mt-4 sm:mt-6">
-                    {service.title}
-                  </h3>
-                  <p className="text-sm sm:text-base leading-6 mt-3 text-[#96989e]">
-                    {service.description}
-                  </p>
-                </div>
-              ))
-          )}
+          <div className="w-full border  border-[#c4c8cb]  rounded-2xl transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+            <img className="w-full rounded-2xl" src="data:image/jpeg;base64,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" alt="Icon" />
+            <h3 className="px-4 font-semibold text-xl sm:text-2xl mt-4 sm:mt-6">
+              Loyiha nomi
+            </h3>
+            <p className="p-4 text-sm sm:text-base leading-6 mt-3 text-[#96989e]">
+              Bu yerda loyiha haqida qisqacha tavsif bo‘ladi. Dizayn, funksionallik va yechim haqida.
+            </p>
+          </div>
+          {/* Xohlagancha boshqa statik kartalarni ham shu yerga qo‘shing */}
         </div>
       </div>
     </div>

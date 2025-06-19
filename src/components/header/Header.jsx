@@ -316,7 +316,7 @@ function Header() {
             key={menuOpen ? "menu-open" : "menu-closed"}
             data-aos="fade-down"
             data-aos-duration="500"
-            className="lg:hidden mt-4 space-y-4 bg-white/95 backdrop-blur rounded-lg p-4 shadow-lg absolute top-full left-0 right-0 z-50"
+            className="lg:hidden space-y-4 bg-white/95 backdrop-blur rounded-lg p-4 shadow-lg absolute top-full left-0 right-0 z-50"
           >
             <ul className="flex flex-col gap-2">
               <li>

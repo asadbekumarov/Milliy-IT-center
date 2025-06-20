@@ -92,7 +92,10 @@ function OurTeam() {
               Bizning tajribamiz yordamida o'z biznesingizni rivojlantiring.
             </p>
           </div>
-          <button className="bg-white font-medium text-[#539c9f] py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors duration-300">
+          <button
+            type="button"
+            aria-label="Hozir qo'shiling!"
+            className="bg-white font-medium text-[#539c9f] py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors duration-300">
             Hozir qo'shiling!
           </button>
         </div>

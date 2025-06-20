@@ -75,6 +75,7 @@ function ServicesPage() {
         <div className="flex flex-col sm:flex-row flex-wrap gap-x-2 sm:gap-x-3 gap-y-2 mt-4 sm:mt-5">
           <button
             onClick={() => setActiveCategoryId("all")}
+            aria-label="Barchasini ko‘rish"
             className={`font-normal text-sm sm:text-base lg:text-xl py-2 px-3 sm:px-4 rounded-full 
               transition-all duration-300 ease-in-out 
               hover:bg-blue-600 hover:text-white 
@@ -86,6 +87,7 @@ function ServicesPage() {
           {data.categories.map((category) => (
             <button
               key={category.id}
+              aria-label={category.name}
               onClick={() => setActiveCategoryId(category.id.toString())}
               className={`font-normal text-sm sm:text-base lg:text-xl py-2 px-3 sm:px-4 rounded-full 
                 transition-all duration-300 ease-in-out 

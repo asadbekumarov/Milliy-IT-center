@@ -86,6 +86,7 @@ function Communication() {
                     className="border outline-none py-2 px-3 rounded-md w-full focus:ring-2 focus:ring-[#539c9f] min-w-0"
                     placeholder={label}
                     type="text"
+                    aria-label={label}
                   />
                 </div>
               ))}
@@ -135,19 +136,27 @@ function Communication() {
                   <p className="text-sm py-1">Tasdiqlash kodini kiriting</p>
                   <input
                     className="border px-3 py-2 rounded-md w-full outline-none focus:ring-2 focus:ring-[#539c9f]"
-                    type="text"q
+                    type="text" q
                   />
                 </div>
                 <div className="flex gap-2 items-end">
-                  <button className="bg-[#e5f3f4] px-4 py-2 rounded-md text-sm">
+                  <button
+                    className="bg-[#e5f3f4] px-4 py-2 rounded-md text-sm"
+                    aria-label="parol"
+                  >
                     asdfgh
                   </button>
-                  <button className="w-[44px] h-[44px] flex items-center justify-center rounded-lg bg-[#539c9f] hover:bg-[#3c7f82] transition">
+                  <button
+                    aria-label="Parolni yangilash"
+                    className="w-[44px] h-[44px] flex items-center justify-center rounded-lg bg-[#539c9f] hover:bg-[#3c7f82] transition">
                     <FaArrowsRotate className="text-white text-lg" />
                   </button>
                 </div>
               </div>
-              <button className="bg-[#539c9f] border text-white w-full py-3 mt-2 rounded-md font-semibold text-base hover:bg-[#3c7f82] transition">
+              <button
+                className="bg-[#539c9f] border text-white w-full py-3 mt-2 rounded-md font-semibold text-base hover:bg-[#3c7f82] transition"
+                aria-label="Xabaringizni yuborish"
+              >
                 Yuborish
               </button>
             </div>

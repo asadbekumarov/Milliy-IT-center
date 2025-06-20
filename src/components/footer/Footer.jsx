@@ -7,10 +7,22 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa6";
 import { AiFillYoutube } from "react-icons/ai";
 import { RiInstagramFill } from "react-icons/ri";
+import { useState } from "react";
 
 function Footer() {
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = () => {
+    if (email.trim() === "") {
+      alert("Iltimos, email kiriting");
+      return;
+    }
+    console.log("Yuborilgan email:", email);
+    alert("Email muvaffaqiyatli yuborildi!");
+    setEmail(""); 
+  }
   return (
-    <div className="max-w-[1460px] mx-auto px-4 py-4">
+    <footer className="max-w-[1460px] mx-auto px-4 py-4">
       <div
         data-aos="fade-up"
         data-aos-duration="1000"
@@ -74,23 +86,80 @@ function Footer() {
           <h3 className="font-swiss font-semibold text-2xl mb-2">
             Yangiliklar xabarnomasi
           </h3>
-          <div className="flex items-center border-b border-black py-1 gap-2">
+          {/* <div className="flex items-center border-b border-black py-1 gap-2">
             <TfiEmail />
             <input
               className="flex-1 outline-none"
               placeholder="Yangiliklar uchun elektron pochta qoldiring."
+              aria-label="Yangiliklar uchun elektron pochta"
               type="email"
+            // value={email}
             />
             <RiTelegram2Line />
+          </div> */}
+          <div className="flex items-center border-b border-black py-1 gap-2 max-w-md">
+            <TfiEmail className="text-xl" />
+            <input
+              className="flex-1 outline-none"
+              placeholder="Yangiliklar uchun elektron pochta qoldiring."
+              aria-label="Yangiliklar uchun elektron pochta"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <RiTelegram2Line
+              onClick={handleSubmit}
+              className="text-2xl text-blue-500 cursor-pointer hover:text-blue-700 transition"
+              title="Yuborish"
+            />
+          </div>
+          <div className="flex flex-wrap justify-start gap-4 mt-7">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 p-2 border border-black rounded-full transition cursor-pointer hover:bg-blue-100"
+            >
+              <GrFacebookOption className="w-full h-full" />
+            </a>
+
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 p-2 border border-black rounded-full transition cursor-pointer hover:bg-blue-100"
+            >
+              <FaLinkedinIn className="w-full h-full" />
+            </a>
+
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 p-2 border border-black rounded-full transition cursor-pointer hover:bg-blue-100"
+            >
+              <FaTwitter className="w-full h-full" />
+            </a>
+
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 p-2 border border-black rounded-full transition cursor-pointer hover:bg-red-100"
+            >
+              <AiFillYoutube className="w-full h-full" />
+            </a>
+
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-10 h-10 p-2 border border-black rounded-full transition cursor-pointer hover:bg-pink-100"
+            >
+              <RiInstagramFill className="w-full h-full" />
+            </a>
           </div>
 
-          <div className="flex flex-wrap justify-start gap-4 mt-7">
-            <GrFacebookOption className="w-10 h-10 p-2 border border-black rounded-full transition" />
-            <FaLinkedinIn className="w-10 h-10 p-2 border border-black rounded-full transition" />
-            <FaTwitter className="w-10 h-10 p-2 border border-black rounded-full transition" />
-            <AiFillYoutube className="w-10 h-10 p-2 border border-black rounded-full transition" />
-            <RiInstagramFill className="w-10 h-10 p-2 border border-black rounded-full transition" />
-          </div>
         </div>
       </div>
 
@@ -106,7 +175,7 @@ function Footer() {
           ©2025 Milliy IT Center. Barcha huquqlar himoyalangan.
         </p>
       </div>
-    </div>
+    </footer>
   );
 }
 

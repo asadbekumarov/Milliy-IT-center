@@ -64,6 +64,7 @@ function News() {
       <div className="flex flex-wrap gap-2 sm:gap-3 mb-6 sm:mb-10">
         <button
           onClick={() => handleCategoryClick("all")}
+          aria-label="Barchasini ko‘rish"
           className={`py-1.5 sm:py-2 px-3 sm:px-4 rounded-full text-sm sm:text-base transition-all duration-300
             ${activeCategory === "all" ? "bg-blue-600 text-white" : "bg-[#f8f9fa] hover:bg-blue-600 hover:text-white"}`}
         >
@@ -72,6 +73,7 @@ function News() {
         {categories.map((categoryName, idx) => (
           <button
             key={idx}
+            aria-label={categoryName}
             onClick={() => handleCategoryClick(categoryName)}
             className={`py-1.5 sm:py-2 px-3 sm:px-4 rounded-full text-sm sm:text-base transition-all duration-300
               ${activeCategory === categoryName ? "bg-blue-600 text-white" : "bg-[#f8f9fa] hover:bg-blue-600 hover:text-white"}`}

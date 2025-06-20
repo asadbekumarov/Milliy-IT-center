@@ -1,5 +1,5 @@
 import Aos from "aos";
-import  { useEffect } from "react";
+import { useEffect } from "react";
 import { BsCheckLg } from "react-icons/bs";
 import { FaArrowsRotate } from "react-icons/fa6";
 
@@ -100,6 +100,8 @@ function Contact() {
                   <p className="text-sm">Ism</p>
                   <input
                     className="border outline-none p-2 rounded-md w-full focus:ring-2 focus:ring-[#539c9f]"
+                    aria-label="Ism"
+                    // value={name}
                     type="text"
                   />
                 </span>
@@ -109,6 +111,8 @@ function Contact() {
                     className="border outline-none p-2 rounded-md w-full focus:ring-2 focus:ring-[#539c9f]"
                     placeholder="+998"
                     type="number"
+                    // value={phone}
+                    aria-label="Telefon"
                   />
                 </span>
               </div>
@@ -118,6 +122,8 @@ function Contact() {
                   <input
                     className="border outline-none p-2 rounded-md w-full focus:ring-2 focus:ring-[#539c9f]"
                     type="text"
+                    // value={companyName}
+                    aria-label="Kompaniya nomi"
                   />
                 </span>
                 <span data-aos="zoom-out-left" className="flex flex-col flex-1">
@@ -163,17 +169,23 @@ function Contact() {
                   <input
                     className="border p-2 rounded-md w-full outline-none focus:ring-2 focus:ring-[#539c9f]"
                     type="text"
+                    // value={confirmationCode}
+                    aria-label="Tasdiqlash kodi"
                   />
                 </div>
 
                 <div className="flex gap-2 items-end">
                   <button
+                    aria-label="Parolni ko'rsatish/yashirish"
                     data-aos="zoom-out-left"
                     className="bg-[#e5f3f4] p-2 rounded-md"
                   >
                     asdfgh
                   </button>
                   <button
+
+                    aria-label="Qayta yuklash"
+
                     data-aos="zoom-out-left"
                     className="w-[60px] h-[48px] flex items-center justify-center rounded-lg bg-[#539c9f] hover:bg-[#3c7f82] transition"
                   >
@@ -183,6 +195,7 @@ function Contact() {
               </div>
 
               <button
+                aria-label="Yuborish"
                 data-aos="zoom-in-down"
                 className="bg-[#539c9f] text-white w-full py-2 mt-2 rounded-md font-semibold text-xl hover:bg-[#3c7f82] transition"
               >

@@ -48,6 +48,7 @@ function Price() {
             </ul>
             <button
               onClick={handleScrollToContact}
+              aria-label="Bepul konsultatsiya oling"
               className="mt-6 w-full bg-white text-[#009b9a] font-swiss font-semibold py-2 rounded-xl hover:bg-[#00aaa9] border-2 border-[#00aaa9] hover:border hover:border-2 hover:border-[#fff] hover:text-white transition duration-300"
             >
               Bepul konsultatsiya oling
@@ -87,6 +88,7 @@ function Price() {
             </ul>
             <button
               onClick={handleScrollToContact}
+              aria-label="Bepul konsultatsiya oling"
               className="mt-6 w-full bg-white text-[#009b9a] font-swiss font-semibold py-2 rounded-xl hover:bg-[#00aaa9] border-2 border-[#00aaa9] hover:border hover:border-2 hover:border-[#fff] hover:text-white transition duration-300"
             >
               Bepul konsultatsiya oling
@@ -112,6 +114,7 @@ function Price() {
             </ul>
             <button
               onClick={handleScrollToContact}
+              aria-label="Bepul konsultatsiya oling"
               className="mt-6 w-full bg-white text-[#009b9a] font-swiss font-semibold py-2 rounded-xl hover:bg-[#00aaa9] border-2 border-[#00aaa9] hover:border hover:border-2 hover:border-[#fff] hover:text-white transition duration-300"
             >
               Bepul konsultatsiya oling

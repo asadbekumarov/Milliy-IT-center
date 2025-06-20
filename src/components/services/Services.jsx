@@ -1,9 +1,8 @@
-import { Carousel } from "antd";
 import axios from "axios";
-import { div } from "framer-motion/client";
 import React, { useEffect, useState } from "react";
 import { FaLock } from "react-icons/fa";
-import Slider from "react-slick";
+import Carousel from "../carusel/Carusel";
+
 function Services() {
   const [response, setResponse] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -54,9 +53,10 @@ function Services() {
   if (error) return <div>Error: {error.message}</div>;
   return (
     <div className="bg-[#e5f3f4]">
-      <div className="max-w-[1460px] mx-auto px-4 py-10 sm:py-16">
+      <Carousel className="py-10 sm:py-16" />
+      <div className="max-w-[1460px] mx-auto px-4 ">
         <div className="flex justify-center flex-col items-center">
-          <p className="bg-[#e5f3f4] font-swiss mt-6 sm:mt-10 text-[#539c9f] text-center p-2 rounded-md font-bold text-base sm:text-lg">
+          <p className="bg-[#e5f3f4] font-swiss text-[#539c9f] text-center p-2 rounded-md font-bold text-base sm:text-lg">
             Xizmatlar
           </p>
           <h2 className="font-semibold font-swiss pt-4 text-2xl sm:text-3xl md:text-4xl lg:text-6xl text-center">
@@ -126,7 +126,7 @@ function Services() {
             </div>
             <div className="p-4">
               <h3 className="text-lg sm:text-xl font-swiss text-center font-semibold text-gray-800">
-Dasturlash              </h3>
+                Dasturlash              </h3>
               <p className="mt-2 font-swiss text-center text-sm sm:text-base text-gray-600">
                 Samarali marketing strategiyalari orqali biznesingizni kengaytiring va maqsadli auditoriyaga yetib boring
               </p>
@@ -155,7 +155,6 @@ Dasturlash              </h3>
               </p>
             </div>
           </div>
-          {/* Repeat similar structure for other service cards */}
         </div>
       </div>
     </div>

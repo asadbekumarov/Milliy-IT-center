@@ -20,16 +20,24 @@ function Portfolio() {
         </h4>
 
         <div className="flex flex-col sm:flex-row flex-wrap gap-x-2 sm:gap-x-3 gap-y-2 mt-4 sm:mt-5">
-          <button className="font-normal text-sm sm:text-base lg:text-xl py-2 px-3 sm:px-4 rounded-full bg-blue-600 text-white">
+          <button
+            aria-label="Barchasini ko‘rish"
+            className="font-normal text-sm sm:text-base lg:text-xl py-2 px-3 sm:px-4 rounded-full bg-blue-600 text-white">
             Barchasini ko‘rish
           </button>
-          <button className="font-normal text-sm sm:text-base lg:text-xl py-2 px-3 sm:px-4 rounded-full bg-[#f8f9fa] hover:bg-blue-600 hover:text-white">
+          <button
+            aria-label="Marketing"
+            className="font-normal text-sm sm:text-base lg:text-xl py-2 px-3 sm:px-4 rounded-full bg-[#f8f9fa] hover:bg-blue-600 hover:text-white">
             Marketing
           </button>
-          <button className="font-normal text-sm sm:text-base lg:text-xl py-2 px-3 sm:px-4 rounded-full bg-[#f8f9fa] hover:bg-blue-600 hover:text-white">
+          <button
+            aria-label="Brending"
+            className="font-normal text-sm sm:text-base lg:text-xl py-2 px-3 sm:px-4 rounded-full bg-[#f8f9fa] hover:bg-blue-600 hover:text-white">
             Brending
           </button>
-          <button className="font-normal text-sm sm:text-base lg:text-xl py-2 px-3 sm:px-4 rounded-full bg-[#f8f9fa] hover:bg-blue-600 hover:text-white">
+          <button
+            aria-label="Dasturlash"
+            className="font-normal text-sm sm:text-base lg:text-xl py-2 px-3 sm:px-4 rounded-full bg-[#f8f9fa] hover:bg-blue-600 hover:text-white">
             Dasturlash
           </button>
         </div>

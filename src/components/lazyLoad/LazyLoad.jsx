@@ -26,7 +26,6 @@ const LazyLoad = ({ children }) => {
 // Lazy load components
 export const LazyHome = lazy(() => import('../../pages/home/Home'));
 export const LazyServices = lazy(() => import('../../pages/servicesPage/ServicesPage'));
-export const LazyAbout = lazy(() => import('../../pages/weAbout/weAbout'));
 export const LazyCommunication = lazy(() => import('../../pages/communication/Communication'));
 export const LazyPortfolio = lazy(() => import('../../pages/portfolioPage/Portfolio'));
 export const LazyBlog = lazy(() => import('../../pages/blogPage/Blog'));

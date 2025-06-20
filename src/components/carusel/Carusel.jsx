@@ -56,7 +56,7 @@ const Carousel = () => {
     return clients.length > 0 ? (
         <Slider {...settings}>
             {clients.map((client) => (
-                <div key={client.id} className="px-2">
+                <div key={client.id} className="px-2 pt-10">
                     <div className="h-full flex flex-col">
                         <img
                             src={client.logo}

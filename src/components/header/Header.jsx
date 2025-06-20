@@ -176,7 +176,7 @@ function Header() {
               className="border font-swiss py-2 px-3 outline-none rounded-md w-60 shadow-sm focus:ring-2 focus:ring-[#539c9f]"
               type="search"
               aria-label="Search"
-              // value={searchTerm}
+            // value={searchTerm}
             />
 
             <span className="flex gap-1 bg-[#e5f3f4] p-1 rounded-full">
@@ -184,7 +184,7 @@ function Header() {
                 type="button"
                 className={`${langClass("En")} font-semibold`}
                 onClick={() => setActiveLang("En")}
-                aria-label="English language"     
+                aria-label="English language"
               >
                 En
               </button>
@@ -207,17 +207,18 @@ function Header() {
               </button>
             </span>
 
-            <button
-              aria-label="Qo‘ng‘iroq qilish"
-              type="button"
-              className="py-3 font-swiss px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-[#539c9f] text-white hover:bg-[#417274]"
+            <a href="tel:+998952625578" aria-label="Qo‘ng‘iroq qilish">
+              <button
+                type="button"
+                className="py-3 font-swiss px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-[#539c9f] text-white hover:bg-[#417274]"
+              >
+                <MdPhoneInTalk className="text-xl" />
+                <span className="hidden font-semibold sm:inline">
+                  (95) 262 55 78
+                </span>
+              </button>
+            </a>
 
-            >
-              <MdPhoneInTalk className="text-xl" />
-              <span className="hidden font-semibold sm:inline">
-                (95) 262 55 78
-              </span>
-            </button>
           </div>
         </div>
         {menuOpen && (
@@ -323,7 +324,7 @@ function Header() {
               className="w-full border font-swiss py-2 px-3 outline-none rounded-md shadow-sm focus:ring-2 focus:ring-[#539c9f]"
               type="search"
               aria-label="Search"
-              // value={searchTerm}
+            // value={searchTerm}
             />
 
             <div className="flex justify-center gap-2">

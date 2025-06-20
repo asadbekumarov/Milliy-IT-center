@@ -4,11 +4,11 @@ import "aos/dist/aos.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Carousel from "../carusel/Carusel";
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
   const [sliderKey, setSliderKey] = useState(0);
-
+  const navigate = useNavigate();
   useEffect(() => {
     Aos.init({
       duration: 1000,
@@ -62,6 +62,7 @@ function Hero() {
               type="button"
               aria-label="Biz haqimizda"
               className="py-3 sm:py-4 px-4 sm:px-5 text-xl sm:text-2xl font-semibold rounded-lg bg-[#e5f3f4] text-black transform transition-transform duration-200 hover:scale-105"
+              onClick={() => navigate("/aboutPage")}
             >
               Biz haqimizda
             </button>
@@ -69,6 +70,7 @@ function Hero() {
               type="button"
               aria-label="Bog'lanish"
               className="py-3 sm:py-4 px-4 sm:px-5 text-xl sm:text-2xl font-semibold rounded-lg bg-[#539c9f] text-white transform transition-transform duration-200 hover:scale-105"
+              onClick={() => navigate("/communication")}
             >
               Bog'lanish
             </button>

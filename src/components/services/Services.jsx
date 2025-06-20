@@ -15,7 +15,6 @@ function Services() {
         },
       })
       .then((response) => {
-        console.log("Response:", response?.data);
         setResponse(response); setLoading(false);
       })
       .catch((error) => {

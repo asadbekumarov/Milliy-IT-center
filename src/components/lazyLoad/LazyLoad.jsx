@@ -1,4 +1,15 @@
-import { Suspense, lazy } from 'react';
+//  * LazyLoad komponenti: 
+//  * 
+//  * Bu komponent React’ning `Suspense` va `lazy` funksiyalarini ishlatib, sahifalarni lazy loading
+//     * (faqat kerak bo‘lganda yuklash) orqali optimallashtiradi.
+//  * 
+//  * Foydalanuvchi sahifani ochganda, kerakli komponentlar faqat o‘sha vaqtda yuklanadi. 
+//  * Yuklanish jarayonida `Suspense` orqali foydalanuvchiga loading spinner ko‘rsatiladi. 
+//  * Bu sahifa yuklanish vaqtini kamaytiradi va foydalanuvchi tajribasini yaxshilaydi.
+//  * 
+//  * Asosan, yirik loyihalarda saytning tez yuklanishiga va resurslarni samarali ishlatishga yordam beradi.
+
+    import { Suspense, lazy } from 'react';
 
 const LazyLoad = ({ children }) => {
     return (

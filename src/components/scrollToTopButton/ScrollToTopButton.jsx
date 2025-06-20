@@ -1,3 +1,16 @@
+//  * ScrollToTopButton komponenti:
+//  * 
+//  * Bu komponent foydalanuvchi sahifada pastga skroll qilganida ko‘rinib turadigan va 
+//  * foydalanuvchi yuqoriga qaytishi uchun ishlatiladigan tugmani yaratadi. Sahifada 200px 
+//  * yoki undan ko‘p pastga siljiganida tugma ko‘rinadi va yuqoriga qaytishga imkon beradi.
+//  * 
+//  * `window.scrollTo()` yordamida foydalanuvchi tugmani bosganda sahifa yuqorisiga smooth 
+//  * (sekin) tarzda o‘tadi.
+//  * 
+//  * `useState` va `useEffect` yordamida sahifa qaysi joyda ekanligi va tugmaning ko‘rinishi 
+//  * boshqariladi.
+
+
 import { useEffect, useState } from "react";
 import { FaArrowUp } from "react-icons/fa";
 

@@ -1,6 +1,5 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Notfound from "./components/notFound/Notfound";
@@ -8,7 +7,6 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import ScrollToTopButton from "./components/scrollToTopButton/ScrollToTopButton";
 import ScrollToTop from "./components/scrollToTopButton/ScrollToTop";
-// import Breadcrumbs from "./components/breadcrumbs/Breadcrumbs";
 import AnalyticsWrapper from "./components/analytics/Analytics";
 import LazyLoad, {
   LazyHome,
@@ -29,7 +27,6 @@ function App() {
     <HelmetProvider>
       <AnalyticsWrapper measurementIds={['G-XXXXXXXXXX']}>
         <Header />
-        {/* <Breadcrumbs /> */}
         <ScrollToTop />
         <Routes>
           <Route path="/" element={

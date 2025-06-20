@@ -17,7 +17,6 @@ function Footer() {
       alert("Iltimos, email kiriting");
       return;
     }
-    console.log("Yuborilgan email:", email);
     alert("Email muvaffaqiyatli yuborildi!");
     setEmail(""); 
   }

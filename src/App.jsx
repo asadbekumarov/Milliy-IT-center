@@ -11,7 +11,7 @@ import AnalyticsWrapper from "./components/analytics/Analytics";
 import LazyLoad, {
   LazyHome,
   LazyServices,
-  LazyAbout,
+  // LazyAbout,
   LazyCommunication,
   LazyPortfolio,
   LazyBlog,
@@ -41,7 +41,7 @@ function App() {
           } />
           <Route path="about" element={
             <LazyLoad>
-              <LazyAbout />
+              {/* <LazyAbout /> */}
             </LazyLoad>
           } />
           <Route path="communication" element={

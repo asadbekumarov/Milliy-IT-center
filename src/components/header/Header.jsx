@@ -79,8 +79,7 @@ function Header() {
               {menuOpen ? <HiOutlineX /> : <HiOutlineMenu />}
             </button>
           </div>
-
-          <ul className="hidden lg:flex justify-between gap-6 xl:gap-8">
+          {/* <ul className="hidden lg:flex justify-between gap-1">
             <li>
               <NavLink
                 to="/"
@@ -106,31 +105,52 @@ function Header() {
               </NavLink>
             </li>
             <li>
-              <Dropdown
-                overlayClassName="custom-dropdown"
-                className="cursor-pointer"
-                overlay={
-                  <div className="bg-white rounded-xl shadow-lg p-4 grid grid-cols-2 gap-2 w-[300px]">
-                    {items.map((item) => (
-                      <a
-                        key={item.key}
-                        href={item.label.props.to}
-                        className="block px-3 py-2 text-[#0d210e] hover:text-[#539c9f] text-ba font-semibold rounded hover:bg-[#f2f2f2] hover:underline transition-all"
-                      >
-                        {item.label.props.children}
-                      </a>
-                    ))}
-                  </div>
+              <NavLink
+                to="/aboutPage"
+                className={({ isActive }) =>
+                  isActive
+                    ? "font-swiss text-[#3b7f82] font-semibold underline"
+                    : "hover:underline font-swiss font-semibold hover:text-[#3b7f82] transition duration-200"
                 }
-                trigger={["hover"]}
               >
-                <a
-                  onClick={(e) => e.preventDefault()}
-                  className="text-[#0d1321] font-bold"
-                >
-                  MIC®
-                </a>
-              </Dropdown>
+                Biz haqimizda
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/ourTeam"
+                className={({ isActive }) =>
+                  isActive
+                    ? "font-swiss text-[#3b7f82] font-semibold underline"
+                    : "hover:underline font-swiss font-semibold hover:text-[#3b7f82] transition duration-200"
+                }
+              >
+                Bizning jamoa
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/news"
+                className={({ isActive }) =>
+                  isActive
+                    ? "font-swiss text-[#3b7f82] font-semibold underline"
+                    : "hover:underline font-swiss font-semibold hover:text-[#3b7f82] transition duration-200"
+                }
+              >
+                Yangiliklar
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/partners"
+                className={({ isActive }) =>
+                  isActive
+                    ? "font-swiss text-[#3b7f82] font-semibold underline"
+                    : "hover:underline font-swiss font-semibold hover:text-[#3b7f82] transition duration-200"
+                }
+              >
+                Hamkorlar
+              </NavLink>
             </li>
             <li>
               <NavLink
@@ -168,17 +188,49 @@ function Header() {
                 Aloqa
               </NavLink>
             </li>
+          </ul> */}
+          <ul className="hidden lg:flex justify-between gap-6 xl:gap-8">
+            {[
+              { to: "/", label: "Bosh Sahifa" },
+              { to: "/service", label: "Xizmatlar" },
+              { to: "/aboutPage", label: "Biz haqimizda" },
+              { to: "/ourTeam", label: "Bizning jamoa" },
+              { to: "/news", label: "Yangiliklar" },
+              { to: "/partners", label: "Hamkorlar" },
+              { to: "/Portfolio", label: "Portfolio" },
+              { to: "/blog", label: "Blog" },
+              { to: "/communication", label: "Aloqa" },
+            ].map((item) => (
+              <li key={item.to}>
+                <NavLink
+                  to={item.to}
+                  className={({ isActive }) =>
+                    isActive
+                      ? "font-swiss text-[#3b7f82] font-semibold underline"
+                      : "hover:underline font-swiss font-semibold hover:text-[#3b7f82] transition duration-200"
+                  }
+                >
+                  {item.label}
+                </NavLink>
+              </li>
+            ))}
           </ul>
-
           <div className="hidden lg:flex items-center gap-4">
-            <input
+            {/* <input
               placeholder="Search..."
               className="border font-swiss py-2 px-3 outline-none rounded-md w-60 shadow-sm focus:ring-2 focus:ring-[#539c9f]"
               type="search"
               aria-label="Search"
             // value={searchTerm}
-            />
-
+            /> */}
+            <div className="relative">
+              {/* <input
+                placeholder="Search..."
+                className="border font-swiss py-2 px-3 outline-none rounded-md w-60 shadow-sm focus:ring-2 focus:ring-[#539c9f]"
+                type="search"
+                aria-label="Search"
+              /> */}
+            </div>
             <span className="flex gap-1 bg-[#e5f3f4] p-1 rounded-full">
               <button
                 type="button"
@@ -197,20 +249,20 @@ function Header() {
               >
                 Uz
               </button>
-              <button
+              {/* <button
                 type="button"
                 className={`${langClass("Ru")} font-semibold`}
                 onClick={() => setActiveLang("Ru")}
                 aria-label="Russian language"
               >
                 Ru
-              </button>
+              </button> */}
             </span>
 
             <a href="tel:+998952625578" aria-label="Qo‘ng‘iroq qilish">
               <button
                 type="button"
-                className="py-3 font-swiss px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-[#539c9f] text-white hover:bg-[#417274]"
+                className="py-3 font-swiss px-2 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg bg-[#539c9f] text-white hover:bg-[#417274]"
               >
                 <MdPhoneInTalk className="text-xl" />
                 <span className="hidden font-semibold sm:inline">

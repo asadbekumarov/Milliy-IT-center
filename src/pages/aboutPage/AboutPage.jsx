@@ -1,4 +1,4 @@
-import React from "react";
+import {} from "react";
 
 function AboutPage() {
   return (
@@ -25,7 +25,7 @@ function AboutPage() {
                 </span>
               </p>
             </div>
-            <img className="w-64 md:w-80 lg:w-96" src="/icon.png" alt="Logo" />
+            <img className="w-64 md:w-80 lg:w-96" src="/icon.png" alt="Logo" loading="lazy" />
           </div>
         </div>
       </div>

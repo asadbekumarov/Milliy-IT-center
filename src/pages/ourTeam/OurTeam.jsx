@@ -1,4 +1,4 @@
-import React from "react";
+import {} from "react";
 import TeamImg from "../../assets/ourTeamImg/Team.jpg";
 import Mexriddin from "../../assets/ourTeamImg/Mexriddin.jpg";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
@@ -17,7 +17,7 @@ function OurTeam() {
             <p className="text-base sm:text-lg leading-7 text-center font-swiss text-gray-600 pt-4 sm:pt-5">
               Jamoamiz a'zolari bilan yaqindan tanishing.
             </p>
-            <img className="rounded-xl sm:rounded-2xl py-6 sm:py-10" src={TeamImg} alt="TeamImg" />
+            <img className="rounded-xl sm:rounded-2xl py-6 sm:py-10" src={TeamImg} alt="TeamImg" loading="lazy" />
             <p className="text-base sm:text-lg leading-7 font-swiss text-gray-600 mt-4">
               MIC IT-da bizning jamoamiz innovatsiyalarimiz va
               muvaffaqiyatlarimiz ortida turgan harakatlantiruvchi kuchdir. Biz
@@ -45,6 +45,7 @@ function OurTeam() {
                       src={Mexriddin}
                       alt="Mexriddin photo"
                       className="w-full h-auto object-cover transform transition duration-500 group-hover:scale-110 group-hover:blur-sm"
+                      loading="lazy"
                     />
                     {/* Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">

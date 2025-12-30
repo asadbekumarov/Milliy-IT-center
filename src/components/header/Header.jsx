@@ -1,45 +1,11 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Logo from "../../assets/headerImg/logo.png";
 import { NavLink } from "react-router-dom";
 import { MdPhoneInTalk } from "react-icons/md";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
-import { Dropdown } from "antd";
 import Aos from "aos";
 
-const items = [
-  {
-    key: "1",
-    label: (
-      <NavLink className={{}} to="/aboutPage">
-        Biz haqimizda
-      </NavLink>
-    ),
-  },
-  {
-    key: "2",
-    label: (
-      <NavLink className={{}} to="/ourTeam">
-        Bizning jamoa
-      </NavLink>
-    ),
-  },
-  {
-    key: "3",
-    label: (
-      <NavLink className={{}} to="/news">
-        Yangiliklar
-      </NavLink>
-    ),
-  },
-  {
-    key: "4",
-    label: (
-      <NavLink className={{}} to="/partners">
-        Hamkorlar
-      </NavLink>
-    ),
-  },
-];
+ 
 
 function Header() {
   useEffect(() => {
@@ -79,125 +45,15 @@ function Header() {
               {menuOpen ? <HiOutlineX /> : <HiOutlineMenu />}
             </button>
           </div>
-          {/* <ul className="hidden lg:flex justify-between gap-1">
-            <li>
-              <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  isActive
-                    ? "font-swiss text-[#3b7f82] font-semibold underline"
-                    : "hover:underline font-swiss font-semibold hover:text-[#3b7f82] transition duration-200"
-                }
-              >
-                Bosh Sahifa
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/service"
-                className={({ isActive }) =>
-                  isActive
-                    ? "font-swiss text-[#3b7f82] font-semibold underline"
-                    : "hover:underline font-swiss font-semibold hover:text-[#3b7f82] transition duration-200"
-                }
-              >
-                Xizmatlar
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/aboutPage"
-                className={({ isActive }) =>
-                  isActive
-                    ? "font-swiss text-[#3b7f82] font-semibold underline"
-                    : "hover:underline font-swiss font-semibold hover:text-[#3b7f82] transition duration-200"
-                }
-              >
-                Biz haqimizda
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/ourTeam"
-                className={({ isActive }) =>
-                  isActive
-                    ? "font-swiss text-[#3b7f82] font-semibold underline"
-                    : "hover:underline font-swiss font-semibold hover:text-[#3b7f82] transition duration-200"
-                }
-              >
-                Bizning jamoa
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/news"
-                className={({ isActive }) =>
-                  isActive
-                    ? "font-swiss text-[#3b7f82] font-semibold underline"
-                    : "hover:underline font-swiss font-semibold hover:text-[#3b7f82] transition duration-200"
-                }
-              >
-                Yangiliklar
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/partners"
-                className={({ isActive }) =>
-                  isActive
-                    ? "font-swiss text-[#3b7f82] font-semibold underline"
-                    : "hover:underline font-swiss font-semibold hover:text-[#3b7f82] transition duration-200"
-                }
-              >
-                Hamkorlar
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/Portfolio"
-                className={({ isActive }) =>
-                  isActive
-                    ? "font-swiss text-[#3b7f82] font-semibold underline"
-                    : "hover:underline font-swiss font-semibold hover:text-[#3b7f82] transition duration-200"
-                }
-              >
-                Portfolio
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/blog"
-                className={({ isActive }) =>
-                  isActive
-                    ? "font-swiss text-[#3b7f82] font-semibold underline"
-                    : "hover:underline font-swiss font-semibold hover:text-[#3b7f82] transition duration-200"
-                }
-              >
-                Blog
-              </NavLink>
-            </li>
-            <li>
-              <NavLink
-                to="/communication"
-                className={({ isActive }) =>
-                  isActive
-                    ? "font-swiss text-[#3b7f82] font-semibold underline"
-                    : "hover:underline font-swiss font-semibold hover:text-[#3b7f82] transition duration-200"
-                }
-              >
-                Aloqa
-              </NavLink>
-            </li>
-          </ul> */}
           <ul className="hidden lg:flex justify-between gap-6 xl:gap-8">
             {[
               { to: "/", label: "Bosh Sahifa" },
               { to: "/service", label: "Xizmatlar" },
-              { to: "/aboutPage", label: "Biz haqimizda" },
+              // { to: "/aboutPage", label: "Biz haqimizda" },
               { to: "/ourTeam", label: "Bizning jamoa" },
               { to: "/news", label: "Yangiliklar" },
-              { to: "/partners", label: "Hamkorlar" },
-              { to: "/Portfolio", label: "Portfolio" },
+              // { to: "/partners", label: "Hamkorlar" },
+              { to: "/portfolio", label: "Portfolio" },
               { to: "/blog", label: "Blog" },
               { to: "/communication", label: "Aloqa" },
             ].map((item) => (

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { TfiLocationPin } from "react-icons/tfi";
@@ -136,7 +136,7 @@ function Communication() {
                   <p className="text-sm py-1">Tasdiqlash kodini kiriting</p>
                   <input
                     className="border px-3 py-2 rounded-md w-full outline-none focus:ring-2 focus:ring-[#539c9f]"
-                    type="text" q
+                    type="text"
                   />
                 </div>
                 <div className="flex gap-2 items-end">

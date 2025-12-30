@@ -39,11 +39,6 @@ function App() {
               <LazyServices />
             </LazyLoad>
           } />
-          <Route path="about" element={
-            <LazyLoad>
-              {/* <LazyAbout /> */}
-            </LazyLoad>
-          } />
           <Route path="communication" element={
             <LazyLoad>
               <LazyCommunication />

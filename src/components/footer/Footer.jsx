@@ -1,4 +1,3 @@
-import React from "react";
 import Logo from "../../assets/headerImg/logo.png";
 import { TfiEmail } from "react-icons/tfi";
 import { RiTelegram2Line } from "react-icons/ri";
@@ -28,7 +27,7 @@ function Footer() {
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mt-16 mb-28"
       >
         <div>
-          <img className="max-w-52 mb-4" src={Logo} alt="logo img" />
+          <img className="max-w-52 mb-4" src={Logo} alt="logo img" loading="lazy" />
           <p className="text-sm my-1">
             Milliy IT Center - Innovatsiyalarni yaratishda biz bilan birga
             rivojlaning

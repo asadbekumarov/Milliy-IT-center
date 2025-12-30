@@ -1,55 +1,10 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
 import { FaLock } from "react-icons/fa";
 import Carousel from "../carusel/Carusel";
 
 function Services() {
-  const [response, setResponse] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  useEffect(() => {
-    axios
-      .get("https://api.milliyitcenter.uz/api/companies", {
-        headers: {
-          "ngrok-skip-browser-warning": "true",
-        },
-      })
-      .then((response) => {
-        setResponse(response); setLoading(false);
-      })
-      .catch((error) => {
-        setError(error);
-        setLoading(false);
-      });
-  }, []);
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 2000,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2,
-    pauseOnHover: true,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 640,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
+  
+  
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error.message}</div>;
   return (
     <div className="bg-[#e5f3f4]">
       <Carousel className="py-10 sm:py-16" />
@@ -63,12 +18,13 @@ function Services() {
           </h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-8 sm:mt-12 pb-8 sm:pb-12">
-          <div className="flex flex-col bg-white border border-gray-200 shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div className="group flex flex-col bg-white border border-gray-200 shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
             <div className="relative pt-[75%]">
               <img
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 ease-in-out transform group-hover:scale-105"
                 alt="Service"
                 src="https://st.depositphotos.com/1000423/1637/i/450/depositphotos_16372601-stock-photo-business-woman-with-financial-symbols.jpg"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-black bg-opacity-60 h-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <p className="text-white flex flex-col items-center text-base sm:text-lg font-swiss font-semibold text-center px-4">
@@ -86,12 +42,13 @@ function Services() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col bg-white border border-gray-200 shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div className="group flex flex-col bg-white border border-gray-200 shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
             <div className="relative pt-[75%]">
               <img
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 ease-in-out transform group-hover:scale-105"
                 alt="Service"
                 src="https://st.depositphotos.com/1000423/1637/i/450/depositphotos_16372601-stock-photo-business-woman-with-financial-symbols.jpg"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-black bg-opacity-60 h-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <p className="text-white flex flex-col items-center text-base sm:text-lg font-swiss font-semibold text-center px-4">
@@ -109,12 +66,13 @@ function Services() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col bg-white border border-gray-200 shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div className="group flex flex-col bg-white border border-gray-200 shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
             <div className="relative pt-[75%]">
               <img
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 ease-in-out transform group-hover:scale-105"
                 alt="Service"
                 src="https://st.depositphotos.com/1000423/1637/i/450/depositphotos_16372601-stock-photo-business-woman-with-financial-symbols.jpg"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-black bg-opacity-60 h-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <p className="text-white flex flex-col items-center text-base sm:text-lg font-swiss font-semibold text-center px-4">
@@ -131,12 +89,13 @@ function Services() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col bg-white border border-gray-200 shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          <div className="group flex flex-col bg-white border border-gray-200 shadow-sm rounded-xl overflow-hidden hover:shadow-lg transition-shadow duration-300">
             <div className="relative pt-[75%]">
               <img
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 ease-in-out transform group-hover:scale-105"
                 alt="Service"
                 src="https://st.depositphotos.com/1000423/1637/i/450/depositphotos_16372601-stock-photo-business-woman-with-financial-symbols.jpg"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-black bg-opacity-60 h-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <p className="text-white flex flex-col items-center text-base sm:text-lg font-swiss font-semibold text-center px-4">

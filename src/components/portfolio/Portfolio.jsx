@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Aos from "aos";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { FaEye } from "react-icons/fa";
 
 import "aos/dist/aos.css";
@@ -42,6 +42,7 @@ function Portfolio() {
             src="https://dora.uz/storage/cases/QRBBfwMcjXP98SOulhCZBbT1CuVsV4idxv8clr7G.webp"
             alt="Marketing Xizmati"
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            loading="lazy"
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 ease-in-out bg-white bg-opacity-90 backdrop-blur-sm text-black px-4 py-4 rounded-xl shadow-md">
@@ -61,6 +62,7 @@ function Portfolio() {
             src="https://dora.uz/storage/cases/suja1kYxNVeYzZ6WcmKey3xAwrXg3QLfgZAulWIW.webp"
             alt="Korparativ veb-saytlar"
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            loading="lazy"
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 ease-in-out bg-white bg-opacity-90 backdrop-blur-sm text-black px-4 py-4 rounded-xl shadow-md">
@@ -80,6 +82,7 @@ function Portfolio() {
             src="https://dora.uz/storage/cases/v0It8Vmaz2bsLR7JkXVE5zHekU6zhGc5wLJeP6yd.webp"
             alt="BrandBook yaratish"
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            loading="lazy"
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 ease-in-out bg-white bg-opacity-90 backdrop-blur-sm text-black px-4 py-4 rounded-xl shadow-md">
@@ -99,6 +102,7 @@ function Portfolio() {
             src="https://dora.uz/storage/cases/ayupdf515BMLw0Ygowc5b7Zznws0MzYwNQ8gkVaz.webp"
             alt="Korparativ veb-saytlar"
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            loading="lazy"
           />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 ease-in-out bg-white bg-opacity-90 backdrop-blur-sm text-black px-4 py-4 rounded-xl shadow-md">

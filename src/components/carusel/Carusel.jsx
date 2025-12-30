@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Slider from "react-slick";
 import axios from "axios";
 
@@ -62,6 +62,7 @@ const Carousel = () => {
                             src={client.logo}
                             alt="Client"
                             className="rounded-md object-contain max-w-[200px] py-3"
+                            loading="lazy"
                         />
                     </div>
                 </div>

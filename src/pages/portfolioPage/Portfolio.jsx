@@ -1,4 +1,4 @@
-import Icon from "../../assets/icon.png";
+
 
 function Portfolio() {
   return (

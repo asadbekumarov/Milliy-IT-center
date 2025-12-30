@@ -13,7 +13,7 @@ function Partners() {
         setPartners(res.data);
         setLoading(false);
       })
-      .catch((err) => {
+      .catch(() => {
         setError("Ma'lumot yuklashda xatolik yuz berdi");
         setLoading(false);
       });
